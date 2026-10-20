@@ -1,5 +1,5 @@
 {
- "report": "DWLLRS — one of those nights | Similar Artists & Repertoire",
+ "report": "DWLLRS — one of those nights | Similar Artists & Repertoire (rev 2, sound-first)",
  "prepared_by": "Keyman",
  "access_date": "2026-10-20",
  "seed": {
@@ -114,7 +114,7 @@
    }
   ]
  },
- "fingerprint": {
+ "fingerprint_rev1": {
   "method": "librosa 1.0.0 on the supplied 44.1 kHz/16-bit stereo WAV (decoded from a 128 kbps source per the filename), analysed mono at 22,050 Hz; ffmpeg ebur128 for loudness. No human or model listening took place: every row below is a signal statistic or an attributed description.",
   "tempo": "103 BPM. Beat tracker 103.4; frame-wise tempogram mode 103 (4,480 frames vs 815 for the runner-up 123). Shazam also lists 103 BPM. Half/double-time readings (51.5 / 206) are not supported by the tempogram.",
   "key": "Unresolved between two readings. Krumhansl–Schmuckler on mean chroma ranks C♯ minor (r = 0.71) ahead of C♯ major (0.62); chroma peaks are G♯, C♯, A, F♯, E. A community chord chart (Ultimate Guitar, user noah.paxman53, standard tuning, no capo) gives a D–F♯m–A–E loop, which is diatonic to A major / F♯ minor. The chart's D chord is weak in the chroma (0.35), so the recording's tonal centre should be confirmed by ear before it is quoted.",
@@ -269,1078 +269,4252 @@
    "Vocal delivery and timbre: not assessable from signal statistics — marked Unassessed in every comparison below."
   ]
  },
+ "vibe": {
+  "headline": "A loud, clean, close pop record that never gets busy.",
+  "paras": [
+   "Verse: airy and almost bass-free (about 4% of the energy sits below 120 Hz), mid-bright, one sustained chord bed and the voice carrying everything. Chorus: the floor drops in (low end roughly 3.5× the verse), the top end darkens (spectral centre falls from ~1.8 kHz to ~1.3 kHz) and the dynamics flatten. It gets thicker, not faster or louder.",
+   "Drums are felt more than heard. The percussive share is about 0.28, in the lowest fifth of the 80 clips measured, and sharp attacks thin out to one every few seconds once the full arrangement is in. The chord loop is a four-chord cycle at 103 BPM, minor-leaning, and the song exhales into a quiet outro instead of ending on a hit.",
+   "Words that the numbers support: hazy, smooth, held-back, late-night, sustained, tonal. Words they do not support: jangly, driving, anthemic, drum-forward, acoustic-strummy."
+  ],
+  "method": "Features were extracted with librosa from the supplied WAV (full track plus three 30-second windows: verse 0:19–0:49, chorus 1:15–1:45, bridge 2:11–2:41) and from Apple's 30-second previews of 80 clips: 71 candidate recordings plus nine DWLLRS recordings used for calibration. Each clip is compared to the seed on timbre (MFCC profile, weight 3), brightness (centroid, roll-off, high-band share, zero-crossing rate, 1.5), rhythmic density (percussive share and onset rate, 1.5), bass weight (1), dynamics (RMS spread and crest, 1), texture (flatness, contrast, mid-band, 0.75), major/minor lean (0.5) and tempo with octave and 3:2 tolerance (1). Lower score = closer. Calibration: the seed's own preview scores 0.51 against the full-track windows and ranks first of 80 clips; four of DWLLRS's eight other catalogue tracks (Nights That We Needed, the summer version, Blue Spirits, Dividends) land at positions 5, 11, 12 and 14, while the brighter 2026 album cuts (meet me on the roof, new spirits, pretty for someone) land at 26, 60 and 74. The metric tracks the DWLLRS sound of this record, not the band name. It cannot hear lyrics, vocal character or mood; those stay attributed."
+ },
  "lanes": {
-  "faith-indie": {
-   "name": "Faith-rooted indie / alt-pop",
-   "desc": "Independent and label-signed acts whose lyrics are explicitly Christian but whose production sits in indie rock, surf-pop or alt-pop rather than congregational worship. Densest evidence: verified co-placement, adjacency to the seed in playlists, reciprocal Shazam similarity, and a shared Oceanside / north San Diego County scene."
+  "hazy-pop": {
+   "name": "Hazy, minimal pop",
+   "desc": "Smooth, sustained, bass-light-until-the-chorus pop with few drum transients. The seed's own home."
   },
-  "indie-folk": {
-   "name": "Moody indie / folk-pop (secular)",
-   "desc": "Acoustic-led, mid-tempo songs with modern pop production. Supported by the seed's placements in MOODY INDIE, SAD VIBES / ALTERNATIVE and granola girl (other DWLLRS tracks), and by Shazam's similar-songs graph."
+  "soft-folk-pop": {
+   "name": "Soft folk-pop, pop-produced",
+   "desc": "Acoustic-rooted singer-songwriter records finished like pop: loud masters, restrained drums, held-back low end."
   },
-  "alt-pop": {
-   "name": "Chill alt-pop (secular)",
-   "desc": "Where DWLLRS's pre-2026 catalogue sat. Supported by Apple Music and Chartmetric similar-artist sets and one SAD VIBES co-placement; weakest track-level evidence."
+  "faith-pop": {
+   "name": "Faith-coded alt-pop",
+   "desc": "Explicitly Christian lyrics inside pop or folk-pop production rather than worship or indie rock."
   }
  },
- "rubric": {
-  "dimensions": [
-   "Sonic/arrangement fit",
-   "Vocal fit",
-   "Mood/lyrical fit",
-   "Verified audience overlap"
+ "measurement": {
+  "method": "Features were extracted with librosa from the supplied WAV (full track plus three 30-second windows: verse 0:19–0:49, chorus 1:15–1:45, bridge 2:11–2:41) and from Apple's 30-second previews of 80 clips: 71 candidate recordings plus nine DWLLRS recordings used for calibration. Each clip is compared to the seed on timbre (MFCC profile, weight 3), brightness (centroid, roll-off, high-band share, zero-crossing rate, 1.5), rhythmic density (percussive share and onset rate, 1.5), bass weight (1), dynamics (RMS spread and crest, 1), texture (flatness, contrast, mid-band, 0.75), major/minor lean (0.5) and tempo with octave and 3:2 tolerance (1). Lower score = closer. Calibration: the seed's own preview scores 0.51 against the full-track windows and ranks first of 80 clips; four of DWLLRS's eight other catalogue tracks (Nights That We Needed, the summer version, Blue Spirits, Dividends) land at positions 5, 11, 12 and 14, while the brighter 2026 album cuts (meet me on the roof, new spirits, pretty for someone) land at 26, 60 and 74. The metric tracks the DWLLRS sound of this record, not the band name. It cannot hear lyrics, vocal character or mood; those stay attributed.",
+  "seed_reference_windows": {
+   "SEED_full": {
+    "tempo": 103.3594,
+    "centroid": 1489.766,
+    "low": 0.0717,
+    "perc": 0.2682,
+    "onsets": 0.9304,
+    "rms_std": 9.5483,
+    "majorness": -0.0879,
+    "flatness": 0.0041
+   },
+   "SEED_0:19-0:49": {
+    "tempo": 103.3594,
+    "centroid": 1573.6914,
+    "low": 0.0421,
+    "perc": 0.2472,
+    "onsets": 3.9667,
+    "rms_std": 2.0584,
+    "majorness": -0.0721,
+    "flatness": 0.0034
+   },
+   "SEED_1:15-1:45": {
+    "tempo": 103.3594,
+    "centroid": 1329.8529,
+    "low": 0.1546,
+    "perc": 0.2846,
+    "onsets": 4.0333,
+    "rms_std": 1.584,
+    "majorness": -0.2645,
+    "flatness": 0.0022
+   },
+   "SEED_2:11-2:41": {
+    "tempo": 103.3594,
+    "centroid": 1324.292,
+    "low": 0.0773,
+    "perc": 0.2703,
+    "onsets": 4.4333,
+    "rms_std": 1.3558,
+    "majorness": -0.0278,
+    "flatness": 0.0019
+   },
+   "DWLLRS || one of those nights": {
+    "tempo": 103.3594,
+    "centroid": 1812.8806,
+    "low": 0.0444,
+    "perc": 0.2761,
+    "onsets": 3.3361,
+    "rms_std": 3.5778,
+    "majorness": -0.1063,
+    "flatness": 0.0099
+   }
+  },
+  "clips_measured": 80,
+  "candidates_measured_excluding_dwllrs": 71,
+  "dwllrs_catalogue_positions_of_84": [
+   5,
+   11,
+   12,
+   14,
+   26,
+   60,
+   63,
+   74
   ],
-  "scale": [
-   "High",
-   "Medium",
-   "Low",
-   "Unassessed"
+  "within_1_2": 17,
+  "unmeasured_no_preview": [
+   "Krooked Kings — Headhunters",
+   "Forrest Nolan — Jesus Blood",
+   "AZIEDOESNTEXIST — Everglades",
+   "Pink Boy — out for a run",
+   "comehelpglo — rough draft",
+   "Jonah Kegan — Vapor"
   ],
-  "evidence_confidence": [
-   "High",
-   "Medium",
-   "Low"
-  ],
-  "rules": [
-   "No listening took place, so sonic and vocal fit are capped at Medium for every candidate.",
-   "Audience overlap High requires verified co-placement in two or more playlists, direct adjacency to the seed, or reciprocal algorithmic similarity; it never overrides a weak musical match.",
-   "Evidence confidence rates how well the identity, release and claims are sourced, independently of similarity.",
-   "Overall rank orders by musical fit (sonic + vocal + mood), with evidence confidence as the tiebreak."
+  "full_ranking": [
+   {
+    "key": "DWLLRS || one of those nights",
+    "tag": "seed",
+    "apple_track_id": 6768459375,
+    "release": "2026-04-10",
+    "genre": "Alternative",
+    "score": 0.511,
+    "components": {
+     "tone colour": 0.604,
+     "brightness": 0.562,
+     "bass weight": 0.463,
+     "drum density": 0.322,
+     "dynamics": 0.567,
+     "texture": 1.168,
+     "major/minor lean": 0.384,
+     "tempo": 0.0
+    },
+    "features": {
+     "tempo": 103.3594,
+     "rms_db": -12.9819,
+     "rms_std": 3.5778,
+     "crest": 11.855,
+     "low": 0.0444,
+     "sub": 0.0149,
+     "high": 0.1094,
+     "mid": 0.6481,
+     "centroid": 1812.8806,
+     "rolloff": 3289.4428,
+     "flatness": 0.0099,
+     "contrast": 21.6714,
+     "perc": 0.2761,
+     "onsets": 3.3361,
+     "zcr": 0.1028,
+     "majorness": -0.1063,
+     "f0_med": 273.7904,
+     "voiced": 0.6878
+    }
+   },
+   {
+    "key": "Jonthekid. || On My Knees (organ version)",
+    "tag": "cand",
+    "apple_track_id": 6787226547,
+    "release": "2026-07-02",
+    "genre": "Hip-Hop/Rap",
+    "score": 0.932,
+    "components": {
+     "tone colour": 1.235,
+     "brightness": 0.473,
+     "bass weight": 0.573,
+     "drum density": 0.595,
+     "dynamics": 1.953,
+     "texture": 0.958,
+     "major/minor lean": 0.497,
+     "tempo": 0.756
+    },
+    "features": {
+     "tempo": 135.9992,
+     "rms_db": -19.7979,
+     "rms_std": 4.7742,
+     "crest": 16.9389,
+     "low": 0.0772,
+     "sub": 0.0186,
+     "high": 0.0755,
+     "mid": 0.6005,
+     "centroid": 1465.7059,
+     "rolloff": 2782.6703,
+     "flatness": 0.0048,
+     "contrast": 23.1647,
+     "perc": 0.3436,
+     "onsets": 3.2693,
+     "zcr": 0.0797,
+     "majorness": -0.1624,
+     "f0_med": 127.7277,
+     "voiced": 0.732
+    }
+   },
+   {
+    "key": "Dreamgirl || Teenage Blue",
+    "tag": "cand",
+    "apple_track_id": 1644213706,
+    "release": "2015-02-14",
+    "genre": "Pop",
+    "score": 1.002,
+    "components": {
+     "tone colour": 1.586,
+     "brightness": 0.855,
+     "bass weight": 0.541,
+     "drum density": 0.604,
+     "dynamics": 0.466,
+     "texture": 1.215,
+     "major/minor lean": 1.507,
+     "tempo": 0.654
+    },
+    "features": {
+     "tempo": 92.2852,
+     "rms_db": -12.5461,
+     "rms_std": 2.0355,
+     "crest": 12.0864,
+     "low": 0.0698,
+     "sub": 0.0165,
+     "high": 0.1432,
+     "mid": 0.6015,
+     "centroid": 1788.4836,
+     "rolloff": 3901.7881,
+     "flatness": 0.0068,
+     "contrast": 21.3229,
+     "perc": 0.2668,
+     "onsets": 2.9024,
+     "zcr": 0.0743,
+     "majorness": 0.1038,
+     "f0_med": 118.4878,
+     "voiced": 0.6181
+    }
+   },
+   {
+    "key": "Levi Collins || Ann Arbor",
+    "tag": "cand",
+    "apple_track_id": 6794747408,
+    "release": "2026-08-21",
+    "genre": "Alternative",
+    "score": 1.032,
+    "components": {
+     "tone colour": 1.524,
+     "brightness": 1.232,
+     "bass weight": 0.622,
+     "drum density": 0.321,
+     "dynamics": 0.618,
+     "texture": 1.977,
+     "major/minor lean": 0.444,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -13.6085,
+     "rms_std": 3.1561,
+     "crest": 12.3103,
+     "low": 0.0756,
+     "sub": 0.0087,
+     "high": 0.1801,
+     "mid": 0.4292,
+     "centroid": 2018.4008,
+     "rolloff": 4350.1657,
+     "flatness": 0.0142,
+     "contrast": 22.1899,
+     "perc": 0.2685,
+     "onsets": 4.2034,
+     "zcr": 0.0844,
+     "majorness": -0.136,
+     "f0_med": 135.7148,
+     "voiced": 0.6321
+    }
+   },
+   {
+    "key": "DWLLRS || Nights That We Needed",
+    "tag": "dwllrs",
+    "apple_track_id": 1782016341,
+    "release": "2024-12-06",
+    "genre": "Pop",
+    "score": 1.069,
+    "components": {
+     "tone colour": 1.431,
+     "brightness": 0.762,
+     "bass weight": 0.96,
+     "drum density": 0.702,
+     "dynamics": 0.447,
+     "texture": 1.978,
+     "major/minor lean": 2.683,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 107.666,
+     "rms_db": -12.1015,
+     "rms_std": 2.7117,
+     "crest": 11.3438,
+     "low": 0.1412,
+     "sub": 0.043,
+     "high": 0.1349,
+     "mid": 0.4627,
+     "centroid": 1769.6293,
+     "rolloff": 3726.0448,
+     "flatness": 0.0096,
+     "contrast": 20.3866,
+     "perc": 0.4182,
+     "onsets": 3.9699,
+     "zcr": 0.0752,
+     "majorness": 0.2999,
+     "f0_med": 86.7381,
+     "voiced": 0.7033
+    }
+   },
+   {
+    "key": "Christian Leave || Please Notice",
+    "tag": "cand",
+    "apple_track_id": 1874409059,
+    "release": "2016-07-01",
+    "genre": "Pop",
+    "score": 1.076,
+    "components": {
+     "tone colour": 1.841,
+     "brightness": 0.817,
+     "bass weight": 0.67,
+     "drum density": 0.249,
+     "dynamics": 0.764,
+     "texture": 1.458,
+     "major/minor lean": 1.804,
+     "tempo": 0.481
+    },
+    "features": {
+     "tempo": 112.3471,
+     "rms_db": -15.2806,
+     "rms_std": 3.3631,
+     "crest": 12.9293,
+     "low": 0.0515,
+     "sub": 0.0027,
+     "high": 0.1013,
+     "mid": 0.4639,
+     "centroid": 1353.9038,
+     "rolloff": 2506.0912,
+     "flatness": 0.0044,
+     "contrast": 22.6931,
+     "perc": 0.2762,
+     "onsets": 4.1033,
+     "zcr": 0.0476,
+     "majorness": 0.1533,
+     "f0_med": 180.6343,
+     "voiced": 0.8947
+    }
+   },
+   {
+    "key": "Bebe Stockwell || Nothing Good is Easy",
+    "tag": "cand",
+    "apple_track_id": 6819365577,
+    "release": "2026-10-09",
+    "genre": "Folk",
+    "score": 1.082,
+    "components": {
+     "tone colour": 1.613,
+     "brightness": 0.705,
+     "bass weight": 1.264,
+     "drum density": 0.629,
+     "dynamics": 0.454,
+     "texture": 2.123,
+     "major/minor lean": 1.645,
+     "tempo": 0.114
+    },
+    "features": {
+     "tempo": 151.9991,
+     "rms_db": -11.8797,
+     "rms_std": 3.1248,
+     "crest": 10.8379,
+     "low": 0.2002,
+     "sub": 0.0379,
+     "high": 0.1246,
+     "mid": 0.3917,
+     "centroid": 1532.4901,
+     "rolloff": 3190.2917,
+     "flatness": 0.0064,
+     "contrast": 20.9001,
+     "perc": 0.297,
+     "onsets": 2.9357,
+     "zcr": 0.0549,
+     "majorness": 0.1267,
+     "f0_med": 81.8699,
+     "voiced": 0.7614
+    }
+   },
+   {
+    "key": "HAPPY LANDING || Wanderer",
+    "tag": "acc",
+    "apple_track_id": 6771938517,
+    "release": "2026-03-06",
+    "genre": "Folk",
+    "score": 1.1,
+    "components": {
+     "tone colour": 1.454,
+     "brightness": 0.797,
+     "bass weight": 1.636,
+     "drum density": 0.635,
+     "dynamics": 0.549,
+     "texture": 2.153,
+     "major/minor lean": 1.046,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 95.7031,
+     "rms_db": -13.3822,
+     "rms_std": 3.4799,
+     "crest": 11.7247,
+     "low": 0.1891,
+     "sub": 0.0624,
+     "high": 0.0893,
+     "mid": 0.4437,
+     "centroid": 1304.7361,
+     "rolloff": 2633.3973,
+     "flatness": 0.0043,
+     "contrast": 19.4733,
+     "perc": 0.3691,
+     "onsets": 3.4028,
+     "zcr": 0.0467,
+     "majorness": 0.0269,
+     "f0_med": 87.2406,
+     "voiced": 0.6499
+    }
+   },
+   {
+    "key": "Sam Barber || The More I Hope",
+    "tag": "acc",
+    "apple_track_id": 1882826389,
+    "release": "2026-04-03",
+    "genre": "Country",
+    "score": 1.111,
+    "components": {
+     "tone colour": 1.358,
+     "brightness": 0.569,
+     "bass weight": 1.006,
+     "drum density": 0.888,
+     "dynamics": 0.419,
+     "texture": 1.859,
+     "major/minor lean": 2.598,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -12.2783,
+     "rms_std": 2.2432,
+     "crest": 11.6127,
+     "low": 0.1649,
+     "sub": 0.0391,
+     "high": 0.1004,
+     "mid": 0.4644,
+     "centroid": 1498.7354,
+     "rolloff": 3110.9557,
+     "flatness": 0.0068,
+     "contrast": 20.6139,
+     "perc": 0.3082,
+     "onsets": 4.9707,
+     "zcr": 0.0597,
+     "majorness": 0.2857,
+     "f0_med": 91.8959,
+     "voiced": 0.8125
+    }
+   },
+   {
+    "key": "HAPPY LANDING || Radiate",
+    "tag": "acc",
+    "apple_track_id": 6771938504,
+    "release": "2026-03-06",
+    "genre": "Folk",
+    "score": 1.131,
+    "components": {
+     "tone colour": 1.288,
+     "brightness": 1.024,
+     "bass weight": 0.787,
+     "drum density": 1.317,
+     "dynamics": 0.421,
+     "texture": 2.609,
+     "major/minor lean": 0.386,
+     "tempo": 0.856
+    },
+    "features": {
+     "tempo": 89.1029,
+     "rms_db": -11.156,
+     "rms_std": 2.613,
+     "crest": 10.3114,
+     "low": 0.1152,
+     "sub": 0.0366,
+     "high": 0.1585,
+     "mid": 0.4438,
+     "centroid": 1865.2914,
+     "rolloff": 4061.1021,
+     "flatness": 0.0127,
+     "contrast": 18.6496,
+     "perc": 0.5456,
+     "onsets": 4.2368,
+     "zcr": 0.0689,
+     "majorness": -0.1068,
+     "f0_med": 136.8952,
+     "voiced": 0.6266
+    }
+   },
+   {
+    "key": "DWLLRS || one of those nights (summer version)",
+    "tag": "dwllrs",
+    "apple_track_id": 6784778296,
+    "release": "2026-07-03",
+    "genre": "Alternative",
+    "score": 1.148,
+    "components": {
+     "tone colour": 1.215,
+     "brightness": 0.533,
+     "bass weight": 1.936,
+     "drum density": 1.287,
+     "dynamics": 0.49,
+     "texture": 2.028,
+     "major/minor lean": 1.407,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -10.5679,
+     "rms_std": 2.6815,
+     "crest": 9.6279,
+     "low": 0.1775,
+     "sub": 0.0834,
+     "high": 0.1048,
+     "mid": 0.5151,
+     "centroid": 1525.66,
+     "rolloff": 3131.338,
+     "flatness": 0.0077,
+     "contrast": 18.9865,
+     "perc": 0.4485,
+     "onsets": 4.7706,
+     "zcr": 0.0632,
+     "majorness": 0.0871,
+     "f0_med": 82.3442,
+     "voiced": 0.5871
+    }
+   },
+   {
+    "key": "DWLLRS || Blue Spirits",
+    "tag": "dwllrs",
+    "apple_track_id": 1654642439,
+    "release": "2022-05-24",
+    "genre": "Pop",
+    "score": 1.158,
+    "components": {
+     "tone colour": 1.757,
+     "brightness": 0.52,
+     "bass weight": 0.574,
+     "drum density": 0.49,
+     "dynamics": 1.933,
+     "texture": 1.682,
+     "major/minor lean": 0.518,
+     "tempo": 1.052
+    },
+    "features": {
+     "tempo": 129.1992,
+     "rms_db": -15.4313,
+     "rms_std": 7.8543,
+     "crest": 12.3415,
+     "low": 0.0537,
+     "sub": 0.0288,
+     "high": 0.1005,
+     "mid": 0.6951,
+     "centroid": 1445.5215,
+     "rolloff": 2752.0185,
+     "flatness": 0.0094,
+     "contrast": 20.4015,
+     "perc": 0.3288,
+     "onsets": 3.372,
+     "zcr": 0.0671,
+     "majorness": -0.0612,
+     "f0_med": 163.4925,
+     "voiced": 0.7535
+    }
+   },
+   {
+    "key": "Ike Dweck || Safe With Me",
+    "tag": "acc",
+    "apple_track_id": 1752992971,
+    "release": "2024-07-18",
+    "genre": "Folk",
+    "score": 1.161,
+    "components": {
+     "tone colour": 1.576,
+     "brightness": 1.15,
+     "bass weight": 1.063,
+     "drum density": 0.616,
+     "dynamics": 0.386,
+     "texture": 2.419,
+     "major/minor lean": 1.548,
+     "tempo": 0.481
+    },
+    "features": {
+     "tempo": 112.3471,
+     "rms_db": -11.4598,
+     "rms_std": 1.8448,
+     "crest": 11.0823,
+     "low": 0.1452,
+     "sub": 0.0479,
+     "high": 0.1648,
+     "mid": 0.4671,
+     "centroid": 1996.6524,
+     "rolloff": 4261.1891,
+     "flatness": 0.0148,
+     "contrast": 19.3207,
+     "perc": 0.38,
+     "onsets": 4.1033,
+     "zcr": 0.0777,
+     "majorness": 0.1106,
+     "f0_med": 102.5555,
+     "voiced": 0.718
+    }
+   },
+   {
+    "key": "DWLLRS || Dividends",
+    "tag": "dwllrs",
+    "apple_track_id": 1649851489,
+    "release": "2022-10-20",
+    "genre": "Pop",
+    "score": 1.161,
+    "components": {
+     "tone colour": 1.479,
+     "brightness": 0.756,
+     "bass weight": 1.762,
+     "drum density": 0.874,
+     "dynamics": 0.495,
+     "texture": 1.905,
+     "major/minor lean": 1.704,
+     "tempo": 0.481
+    },
+    "features": {
+     "tempo": 112.3471,
+     "rms_db": -11.4031,
+     "rms_std": 3.3645,
+     "crest": 10.3122,
+     "low": 0.1895,
+     "sub": 0.069,
+     "high": 0.1272,
+     "mid": 0.4065,
+     "centroid": 1474.3646,
+     "rolloff": 3144.5315,
+     "flatness": 0.0053,
+     "contrast": 21.3946,
+     "perc": 0.4574,
+     "onsets": 3.8365,
+     "zcr": 0.0522,
+     "majorness": 0.1366,
+     "f0_med": 88.7656,
+     "voiced": 0.8296
+    }
+   },
+   {
+    "key": "Hans Williams || Skin",
+    "tag": "cand",
+    "apple_track_id": 1722731736,
+    "release": "2024-01-24",
+    "genre": "Folk-Rock",
+    "score": 1.163,
+    "components": {
+     "tone colour": 1.562,
+     "brightness": 1.238,
+     "bass weight": 0.566,
+     "drum density": 0.882,
+     "dynamics": 1.727,
+     "texture": 1.864,
+     "major/minor lean": 0.719,
+     "tempo": 0.0
+    },
+    "features": {
+     "tempo": 103.3594,
+     "rms_db": -17.3834,
+     "rms_std": 5.758,
+     "crest": 14.3882,
+     "low": 0.0812,
+     "sub": 0.0158,
+     "high": 0.1783,
+     "mid": 0.5113,
+     "centroid": 1991.939,
+     "rolloff": 4333.603,
+     "flatness": 0.0144,
+     "contrast": 20.7212,
+     "perc": 0.4372,
+     "onsets": 3.4361,
+     "zcr": 0.0746,
+     "majorness": -0.0276,
+     "f0_med": 103.7472,
+     "voiced": 0.78
+    }
+   },
+   {
+    "key": "Riverly || Fail and Fall",
+    "tag": "acc",
+    "apple_track_id": 1819536572,
+    "release": "2025-06-19",
+    "genre": "Singer/Songwriter",
+    "score": 1.174,
+    "components": {
+     "tone colour": 1.506,
+     "brightness": 1.057,
+     "bass weight": 0.749,
+     "drum density": 1.291,
+     "dynamics": 0.555,
+     "texture": 2.115,
+     "major/minor lean": 0.731,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -13.1734,
+     "rms_std": 2.256,
+     "crest": 12.4398,
+     "low": 0.1258,
+     "sub": 0.026,
+     "high": 0.1578,
+     "mid": 0.4572,
+     "centroid": 1901.7386,
+     "rolloff": 4188.3164,
+     "flatness": 0.0123,
+     "contrast": 20.4096,
+     "perc": 0.394,
+     "onsets": 5.1042,
+     "zcr": 0.0739,
+     "majorness": -0.0257,
+     "f0_med": 103.1496,
+     "voiced": 0.8141
+    }
+   },
+   {
+    "key": "Bazzi || Myself",
+    "tag": "cand",
+    "apple_track_id": 1369438949,
+    "release": "2018-04-12",
+    "genre": "Pop",
+    "score": 1.177,
+    "components": {
+     "tone colour": 1.304,
+     "brightness": 1.492,
+     "bass weight": 0.679,
+     "drum density": 1.421,
+     "dynamics": 0.637,
+     "texture": 2.557,
+     "major/minor lean": 0.643,
+     "tempo": 0.226
+    },
+    "features": {
+     "tempo": 99.384,
+     "rms_db": -12.271,
+     "rms_std": 4.0697,
+     "crest": 10.7313,
+     "low": 0.0951,
+     "sub": 0.0279,
+     "high": 0.2064,
+     "mid": 0.4551,
+     "centroid": 2177.6157,
+     "rolloff": 4528.9864,
+     "flatness": 0.0239,
+     "contrast": 19.981,
+     "perc": 0.5536,
+     "onsets": 3.2026,
+     "zcr": 0.0866,
+     "majorness": -0.2355,
+     "f0_med": 176.5086,
+     "voiced": 0.8156
+    }
+   },
+   {
+    "key": "Hazlett || My Skin",
+    "tag": "cand",
+    "apple_track_id": 1626025824,
+    "release": "2022-07-01",
+    "genre": "Folk",
+    "score": 1.178,
+    "components": {
+     "tone colour": 1.793,
+     "brightness": 0.787,
+     "bass weight": 1.483,
+     "drum density": 0.292,
+     "dynamics": 0.877,
+     "texture": 2.344,
+     "major/minor lean": 1.443,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 161.499,
+     "rms_db": -13.9825,
+     "rms_std": 4.4496,
+     "crest": 12.1107,
+     "low": 0.1655,
+     "sub": 0.0643,
+     "high": 0.139,
+     "mid": 0.3879,
+     "centroid": 1589.8143,
+     "rolloff": 3295.4891,
+     "flatness": 0.0071,
+     "contrast": 20.1118,
+     "perc": 0.2774,
+     "onsets": 4.1701,
+     "zcr": 0.054,
+     "majorness": 0.0931,
+     "f0_med": 138.4858,
+     "voiced": 0.8218
+    }
+   },
+   {
+    "key": "Joseph O'Brien || Looking Down",
+    "tag": "acc",
+    "apple_track_id": 1892521658,
+    "release": "2026-05-08",
+    "genre": "Christian",
+    "score": 1.182,
+    "components": {
+     "tone colour": 1.32,
+     "brightness": 0.934,
+     "bass weight": 0.879,
+     "drum density": 0.553,
+     "dynamics": 1.91,
+     "texture": 2.313,
+     "major/minor lean": 1.492,
+     "tempo": 0.654
+    },
+    "features": {
+     "tempo": 92.2852,
+     "rms_db": -17.3328,
+     "rms_std": 6.1713,
+     "crest": 14.6834,
+     "low": 0.1543,
+     "sub": 0.0348,
+     "high": 0.1395,
+     "mid": 0.519,
+     "centroid": 1792.8898,
+     "rolloff": 4080.6088,
+     "flatness": 0.013,
+     "contrast": 18.4693,
+     "perc": 0.3494,
+     "onsets": 3.4388,
+     "zcr": 0.065,
+     "majorness": 0.1012,
+     "f0_med": 88.2543,
+     "voiced": 0.8388
+    }
+   },
+   {
+    "key": "Strings & Heart || peach sand",
+    "tag": "acc",
+    "apple_track_id": 6819361261,
+    "release": "2026-06-26",
+    "genre": "Christian Rock",
+    "score": 1.186,
+    "components": {
+     "tone colour": 1.552,
+     "brightness": 1.608,
+     "bass weight": 0.531,
+     "drum density": 0.845,
+     "dynamics": 0.858,
+     "texture": 2.639,
+     "major/minor lean": 0.43,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 161.499,
+     "rms_db": -12.8334,
+     "rms_std": 4.7509,
+     "crest": 11.0173,
+     "low": 0.064,
+     "sub": 0.0124,
+     "high": 0.1771,
+     "mid": 0.5063,
+     "centroid": 2324.5901,
+     "rolloff": 4443.7209,
+     "flatness": 0.0299,
+     "contrast": 19.089,
+     "perc": 0.4383,
+     "onsets": 3.6363,
+     "zcr": 0.1156,
+     "majorness": -0.0836,
+     "f0_med": 110.553,
+     "voiced": 0.8017
+    }
+   },
+   {
+    "key": "Luke Rob || Distance to Close",
+    "tag": "acc",
+    "apple_track_id": 6772673130,
+    "release": "2026-05-29",
+    "genre": "Country",
+    "score": 1.192,
+    "components": {
+     "tone colour": 1.381,
+     "brightness": 1.128,
+     "bass weight": 0.71,
+     "drum density": 1.291,
+     "dynamics": 0.594,
+     "texture": 2.427,
+     "major/minor lean": 2.181,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 107.666,
+     "rms_db": -12.9129,
+     "rms_std": 3.3487,
+     "crest": 12.0978,
+     "low": 0.118,
+     "sub": 0.0231,
+     "high": 0.1658,
+     "mid": 0.4562,
+     "centroid": 1969.6684,
+     "rolloff": 4217.9559,
+     "flatness": 0.0193,
+     "contrast": 20.0501,
+     "perc": 0.4243,
+     "onsets": 2.6355,
+     "zcr": 0.0777,
+     "majorness": 0.2161,
+     "f0_med": 90.8404,
+     "voiced": 0.859
+    }
+   },
+   {
+    "key": "Hunter Metts || Weathervane",
+    "tag": "cand",
+    "apple_track_id": 1774832755,
+    "release": "2024-11-15",
+    "genre": "Contemporary Folk",
+    "score": 1.197,
+    "components": {
+     "tone colour": 1.666,
+     "brightness": 0.732,
+     "bass weight": 0.877,
+     "drum density": 0.887,
+     "dynamics": 0.943,
+     "texture": 2.194,
+     "major/minor lean": 1.869,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -14.5392,
+     "rms_std": 4.1968,
+     "crest": 12.8023,
+     "low": 0.1551,
+     "sub": 0.0336,
+     "high": 0.1127,
+     "mid": 0.4137,
+     "centroid": 1428.4217,
+     "rolloff": 2964.8519,
+     "flatness": 0.0053,
+     "contrast": 20.0368,
+     "perc": 0.4441,
+     "onsets": 3.5362,
+     "zcr": 0.0482,
+     "majorness": 0.1642,
+     "f0_med": 97.9243,
+     "voiced": 0.7088
+    }
+   },
+   {
+    "key": "Mr Twin Sister || Blush",
+    "tag": "cand",
+    "apple_track_id": 905957640,
+    "release": "2014-08-02",
+    "genre": "Pop",
+    "score": 1.209,
+    "components": {
+     "tone colour": 1.581,
+     "brightness": 0.924,
+     "bass weight": 1.521,
+     "drum density": 0.66,
+     "dynamics": 1.328,
+     "texture": 2.372,
+     "major/minor lean": 0.407,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -16.118,
+     "rms_std": 4.9623,
+     "crest": 13.5848,
+     "low": 0.1977,
+     "sub": 0.0527,
+     "high": 0.163,
+     "mid": 0.3974,
+     "centroid": 1734.6736,
+     "rolloff": 3577.502,
+     "flatness": 0.0126,
+     "contrast": 20.5643,
+     "perc": 0.3173,
+     "onsets": 3.0071,
+     "zcr": 0.0625,
+     "majorness": -0.1173,
+     "f0_med": 81.8699,
+     "voiced": 0.8697
+    }
+   },
+   {
+    "key": "Michael Marcagi || Scared To Start",
+    "tag": "cand",
+    "apple_track_id": 1724272788,
+    "release": "2024-01-12",
+    "genre": "Alternative",
+    "score": 1.209,
+    "components": {
+     "tone colour": 1.38,
+     "brightness": 0.708,
+     "bass weight": 0.797,
+     "drum density": 1.206,
+     "dynamics": 1.311,
+     "texture": 2.154,
+     "major/minor lean": 3.093,
+     "tempo": 0.114
+    },
+    "features": {
+     "tempo": 151.9991,
+     "rms_db": -16.493,
+     "rms_std": 3.7948,
+     "crest": 15.2039,
+     "low": 0.1364,
+     "sub": 0.0293,
+     "high": 0.1344,
+     "mid": 0.5191,
+     "centroid": 1728.7073,
+     "rolloff": 3528.8266,
+     "flatness": 0.0136,
+     "contrast": 19.2298,
+     "perc": 0.4739,
+     "onsets": 3.0692,
+     "zcr": 0.0716,
+     "majorness": 0.3683,
+     "f0_med": 83.301,
+     "voiced": 0.8242
+    }
+   },
+   {
+    "key": "SYML || The White Light of the Morning",
+    "tag": "cand",
+    "apple_track_id": 1834000964,
+    "release": "2025-09-26",
+    "genre": "Alternative",
+    "score": 1.22,
+    "components": {
+     "tone colour": 1.66,
+     "brightness": 1.332,
+     "bass weight": 0.581,
+     "drum density": 0.59,
+     "dynamics": 2.05,
+     "texture": 1.053,
+     "major/minor lean": 0.44,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -19.8145,
+     "rms_std": 5.7654,
+     "crest": 15.9687,
+     "low": 0.0643,
+     "sub": 0.0093,
+     "high": 0.0626,
+     "mid": 0.5929,
+     "centroid": 1071.7824,
+     "rolloff": 2008.0296,
+     "flatness": 0.0047,
+     "contrast": 22.0944,
+     "perc": 0.1796,
+     "onsets": 3.4388,
+     "zcr": 0.0506,
+     "majorness": -0.0786,
+     "f0_med": 130.7132,
+     "voiced": 0.7907
+    }
+   },
+   {
+    "key": "DWLLRS || meet me on the roof",
+    "tag": "dwllrs",
+    "apple_track_id": 6784810970,
+    "release": "2025-11-07",
+    "genre": "Alternative",
+    "score": 1.225,
+    "components": {
+     "tone colour": 1.158,
+     "brightness": 1.748,
+     "bass weight": 0.568,
+     "drum density": 1.066,
+     "dynamics": 1.001,
+     "texture": 2.428,
+     "major/minor lean": 2.47,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 161.499,
+     "rms_db": -14.4298,
+     "rms_std": 4.0551,
+     "crest": 13.299,
+     "low": 0.0672,
+     "sub": 0.0103,
+     "high": 0.2057,
+     "mid": 0.5066,
+     "centroid": 2323.1609,
+     "rolloff": 5185.7241,
+     "flatness": 0.0272,
+     "contrast": 19.7742,
+     "perc": 0.4505,
+     "onsets": 4.4036,
+     "zcr": 0.0996,
+     "majorness": 0.2644,
+     "f0_med": 104.3482,
+     "voiced": 0.7204
+    }
+   },
+   {
+    "key": "Mark Ambor || Belong Together",
+    "tag": "cand",
+    "apple_track_id": 1732802340,
+    "release": "2024-02-16",
+    "genre": "Pop",
+    "score": 1.226,
+    "components": {
+     "tone colour": 1.527,
+     "brightness": 1.493,
+     "bass weight": 0.643,
+     "drum density": 1.17,
+     "dynamics": 0.511,
+     "texture": 2.356,
+     "major/minor lean": 0.839,
+     "tempo": 0.654
+    },
+    "features": {
+     "tempo": 92.2852,
+     "rms_db": -12.2872,
+     "rms_std": 3.5608,
+     "crest": 11.0524,
+     "low": 0.0962,
+     "sub": 0.0216,
+     "high": 0.1908,
+     "mid": 0.5008,
+     "centroid": 2175.2593,
+     "rolloff": 4862.1255,
+     "flatness": 0.0172,
+     "contrast": 19.2287,
+     "perc": 0.5173,
+     "onsets": 4.1701,
+     "zcr": 0.081,
+     "majorness": -0.0078,
+     "f0_med": 98.4916,
+     "voiced": 0.7459
+    }
+   },
+   {
+    "key": "Elijah Thomas || Nothing Like You",
+    "tag": "cand",
+    "apple_track_id": 1792032722,
+    "release": "2024-03-22",
+    "genre": "Christian",
+    "score": 1.244,
+    "components": {
+     "tone colour": 1.51,
+     "brightness": 1.561,
+     "bass weight": 1.953,
+     "drum density": 0.47,
+     "dynamics": 0.445,
+     "texture": 2.85,
+     "major/minor lean": 0.808,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 107.666,
+     "rms_db": -12.2113,
+     "rms_std": 2.6544,
+     "crest": 11.3939,
+     "low": 0.1489,
+     "sub": 0.0948,
+     "high": 0.1961,
+     "mid": 0.4212,
+     "centroid": 2227.9747,
+     "rolloff": 4932.1793,
+     "flatness": 0.0203,
+     "contrast": 19.0745,
+     "perc": 0.3466,
+     "onsets": 4.07,
+     "zcr": 0.0808,
+     "majorness": -0.0129,
+     "f0_med": 121.9598,
+     "voiced": 0.4059
+    }
+   },
+   {
+    "key": "slenderbodies || king",
+    "tag": "cand",
+    "apple_track_id": 1449226113,
+    "release": "2018-01-25",
+    "genre": "Alternative",
+    "score": 1.245,
+    "components": {
+     "tone colour": 1.561,
+     "brightness": 0.847,
+     "bass weight": 1.45,
+     "drum density": 1.222,
+     "dynamics": 0.619,
+     "texture": 2.867,
+     "major/minor lean": 1.054,
+     "tempo": 0.226
+    },
+    "features": {
+     "tempo": 99.384,
+     "rms_db": -10.7505,
+     "rms_std": 3.5526,
+     "crest": 9.4203,
+     "low": 0.1604,
+     "sub": 0.0647,
+     "high": 0.1315,
+     "mid": 0.3887,
+     "centroid": 1602.9196,
+     "rolloff": 3402.3712,
+     "flatness": 0.0126,
+     "contrast": 18.6337,
+     "perc": 0.5115,
+     "onsets": 3.2693,
+     "zcr": 0.0484,
+     "majorness": -0.3235,
+     "f0_med": 103.4484,
+     "voiced": 0.5794
+    }
+   },
+   {
+    "key": "Josiah Queen || demons",
+    "tag": "acc",
+    "apple_track_id": 1861978106,
+    "release": "2026-01-16",
+    "genre": "Christian",
+    "score": 1.251,
+    "components": {
+     "tone colour": 1.326,
+     "brightness": 1.751,
+     "bass weight": 0.752,
+     "drum density": 0.927,
+     "dynamics": 0.429,
+     "texture": 2.774,
+     "major/minor lean": 1.033,
+     "tempo": 1.052
+    },
+    "features": {
+     "tempo": 129.1992,
+     "rms_db": -10.8289,
+     "rms_std": 2.5818,
+     "crest": 10.1443,
+     "low": 0.1073,
+     "sub": 0.0344,
+     "high": 0.2105,
+     "mid": 0.4455,
+     "centroid": 2341.9646,
+     "rolloff": 5064.7562,
+     "flatness": 0.0226,
+     "contrast": 19.1313,
+     "perc": 0.4492,
+     "onsets": 3.4361,
+     "zcr": 0.0983,
+     "majorness": 0.0247,
+     "f0_med": 117.1269,
+     "voiced": 0.8033
+    }
+   },
+   {
+    "key": "Bennett Coast || Pretender",
+    "tag": "acc",
+    "apple_track_id": 1732356508,
+    "release": "2024-03-08",
+    "genre": "Alternative",
+    "score": 1.273,
+    "components": {
+     "tone colour": 1.753,
+     "brightness": 1.437,
+     "bass weight": 0.688,
+     "drum density": 0.401,
+     "dynamics": 0.593,
+     "texture": 2.184,
+     "major/minor lean": 2.521,
+     "tempo": 0.856
+    },
+    "features": {
+     "tempo": 89.1029,
+     "rms_db": -13.3292,
+     "rms_std": 3.171,
+     "crest": 12.1787,
+     "low": 0.1187,
+     "sub": 0.0113,
+     "high": 0.1933,
+     "mid": 0.4357,
+     "centroid": 2179.8042,
+     "rolloff": 4554.1474,
+     "flatness": 0.0134,
+     "contrast": 20.717,
+     "perc": 0.312,
+     "onsets": 3.5029,
+     "zcr": 0.0863,
+     "majorness": 0.273,
+     "f0_med": 91.8959,
+     "voiced": 0.9589
+    }
+   },
+   {
+    "key": "Dominic Fike || 3 Nights",
+    "tag": "cand",
+    "apple_track_id": 1438243871,
+    "release": "2018-01-03",
+    "genre": "Alternative",
+    "score": 1.281,
+    "components": {
+     "tone colour": 1.619,
+     "brightness": 1.336,
+     "bass weight": 1.383,
+     "drum density": 1.248,
+     "dynamics": 0.573,
+     "texture": 2.811,
+     "major/minor lean": 0.445,
+     "tempo": 0.114
+    },
+    "features": {
+     "tempo": 151.9991,
+     "rms_db": -11.1294,
+     "rms_std": 3.0962,
+     "crest": 9.4204,
+     "low": 0.1737,
+     "sub": 0.0555,
+     "high": 0.1829,
+     "mid": 0.4116,
+     "centroid": 2058.2627,
+     "rolloff": 4477.3134,
+     "flatness": 0.018,
+     "contrast": 19.1735,
+     "perc": 0.5325,
+     "onsets": 4.2034,
+     "zcr": 0.0733,
+     "majorness": -0.0758,
+     "f0_med": 83.301,
+     "voiced": 0.694
+    }
+   },
+   {
+    "key": "Hugo Barriol || Glory Days",
+    "tag": "cand",
+    "apple_track_id": 1653985804,
+    "release": "2022-12-02",
+    "genre": "Pop",
+    "score": 1.306,
+    "components": {
+     "tone colour": 1.528,
+     "brightness": 0.856,
+     "bass weight": 1.394,
+     "drum density": 1.592,
+     "dynamics": 0.807,
+     "texture": 2.636,
+     "major/minor lean": 0.436,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -8.7835,
+     "rms_std": 1.1481,
+     "crest": 8.6295,
+     "low": 0.1651,
+     "sub": 0.0598,
+     "high": 0.1359,
+     "mid": 0.468,
+     "centroid": 1802.5977,
+     "rolloff": 3852.7087,
+     "flatness": 0.0117,
+     "contrast": 17.8866,
+     "perc": 0.3578,
+     "onsets": 5.8047,
+     "zcr": 0.0655,
+     "majorness": -0.1322,
+     "f0_med": 82.3442,
+     "voiced": 0.6305
+    }
+   },
+   {
+    "key": "Ike Dweck || Dawn",
+    "tag": "acc",
+    "apple_track_id": 1874303814,
+    "release": "2026-02-20",
+    "genre": "Folk",
+    "score": 1.315,
+    "components": {
+     "tone colour": 1.334,
+     "brightness": 2.318,
+     "bass weight": 0.683,
+     "drum density": 0.931,
+     "dynamics": 0.481,
+     "texture": 2.924,
+     "major/minor lean": 2.032,
+     "tempo": 0.226
+    },
+    "features": {
+     "tempo": 99.384,
+     "rms_db": -11.7171,
+     "rms_std": 3.3764,
+     "crest": 10.8704,
+     "low": 0.097,
+     "sub": 0.0277,
+     "high": 0.2496,
+     "mid": 0.4572,
+     "centroid": 2644.3456,
+     "rolloff": 5762.3502,
+     "flatness": 0.0364,
+     "contrast": 19.2745,
+     "perc": 0.4423,
+     "onsets": 4.2368,
+     "zcr": 0.1118,
+     "majorness": 0.1913,
+     "f0_med": 92.4282,
+     "voiced": 0.8304
+    }
+   },
+   {
+    "key": "Luke Rob || Chapel Haze",
+    "tag": "acc",
+    "apple_track_id": 1858842497,
+    "release": "2025-12-12",
+    "genre": "Folk",
+    "score": 1.322,
+    "components": {
+     "tone colour": 1.44,
+     "brightness": 1.437,
+     "bass weight": 0.714,
+     "drum density": 1.973,
+     "dynamics": 0.434,
+     "texture": 2.389,
+     "major/minor lean": 1.902,
+     "tempo": 0.226
+    },
+    "features": {
+     "tempo": 99.384,
+     "rms_db": -12.3586,
+     "rms_std": 2.1309,
+     "crest": 11.905,
+     "low": 0.1055,
+     "sub": 0.029,
+     "high": 0.1912,
+     "mid": 0.4769,
+     "centroid": 2140.684,
+     "rolloff": 4618.9972,
+     "flatness": 0.0218,
+     "contrast": 20.0618,
+     "perc": 0.5265,
+     "onsets": 5.4044,
+     "zcr": 0.0911,
+     "majorness": 0.1697,
+     "f0_med": 97.3603,
+     "voiced": 0.6042
+    }
+   },
+   {
+    "key": "Krooked Kings || Catacombs",
+    "tag": "cand",
+    "apple_track_id": 1709204260,
+    "release": "2023-11-08",
+    "genre": "Alternative",
+    "score": 1.324,
+    "components": {
+     "tone colour": 1.712,
+     "brightness": 1.057,
+     "bass weight": 1.413,
+     "drum density": 1.243,
+     "dynamics": 1.061,
+     "texture": 2.729,
+     "major/minor lean": 0.475,
+     "tempo": 0.226
+    },
+    "features": {
+     "tempo": 99.384,
+     "rms_db": -15.7587,
+     "rms_std": 3.807,
+     "crest": 13.9531,
+     "low": 0.1791,
+     "sub": 0.0548,
+     "high": 0.164,
+     "mid": 0.4275,
+     "centroid": 1803.4827,
+     "rolloff": 3931.9112,
+     "flatness": 0.0163,
+     "contrast": 18.9983,
+     "perc": 0.532,
+     "onsets": 3.4028,
+     "zcr": 0.0609,
+     "majorness": -0.0684,
+     "f0_med": 83.301,
+     "voiced": 0.7978
+    }
+   },
+   {
+    "key": "Bennett Coast || Now I Know You",
+    "tag": "cand",
+    "apple_track_id": 1692218895,
+    "release": "2023-08-04",
+    "genre": "Alternative",
+    "score": 1.331,
+    "components": {
+     "tone colour": 1.474,
+     "brightness": 1.386,
+     "bass weight": 1.091,
+     "drum density": 1.524,
+     "dynamics": 0.405,
+     "texture": 2.644,
+     "major/minor lean": 1.55,
+     "tempo": 0.608
+    },
+    "features": {
+     "tempo": 172.2656,
+     "rms_db": -11.2116,
+     "rms_std": 1.5332,
+     "crest": 10.7611,
+     "low": 0.178,
+     "sub": 0.0381,
+     "high": 0.1822,
+     "mid": 0.4598,
+     "centroid": 2050.1512,
+     "rolloff": 4518.7535,
+     "flatness": 0.0181,
+     "contrast": 18.9363,
+     "perc": 0.3784,
+     "onsets": 5.5712,
+     "zcr": 0.0649,
+     "majorness": 0.1109,
+     "f0_med": 87.746,
+     "voiced": 0.9659
+    }
+   },
+   {
+    "key": "Claud || Soft Spot",
+    "tag": "cand",
+    "apple_track_id": 1539093044,
+    "release": "2020-12-04",
+    "genre": "Alternative",
+    "score": 1.333,
+    "components": {
+     "tone colour": 1.543,
+     "brightness": 1.373,
+     "bass weight": 0.855,
+     "drum density": 1.101,
+     "dynamics": 0.855,
+     "texture": 2.423,
+     "major/minor lean": 3.11,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 161.499,
+     "rms_db": -13.3667,
+     "rms_std": 4.6061,
+     "crest": 11.6105,
+     "low": 0.1595,
+     "sub": 0.0245,
+     "high": 0.1928,
+     "mid": 0.4447,
+     "centroid": 2018.0623,
+     "rolloff": 4491.8996,
+     "flatness": 0.015,
+     "contrast": 19.7768,
+     "perc": 0.3901,
+     "onsets": 2.7356,
+     "zcr": 0.07,
+     "majorness": 0.3711,
+     "f0_med": 88.2543,
+     "voiced": 0.7196
+    }
+   },
+   {
+    "key": "Daniel Leggs || Cassette",
+    "tag": "cand",
+    "apple_track_id": 1867298896,
+    "release": "2026-01-02",
+    "genre": "Pop",
+    "score": 1.337,
+    "components": {
+     "tone colour": 1.908,
+     "brightness": 1.122,
+     "bass weight": 0.702,
+     "drum density": 1.068,
+     "dynamics": 0.49,
+     "texture": 1.869,
+     "major/minor lean": 2.2,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -12.2768,
+     "rms_std": 3.4694,
+     "crest": 10.8753,
+     "low": 0.0318,
+     "sub": 0.0047,
+     "high": 0.1519,
+     "mid": 0.5583,
+     "centroid": 2080.9588,
+     "rolloff": 4099.4378,
+     "flatness": 0.0177,
+     "contrast": 20.3525,
+     "perc": 0.337,
+     "onsets": 2.4706,
+     "zcr": 0.0969,
+     "majorness": 0.2194,
+     "f0_med": 138.4858,
+     "voiced": 0.7481
+    }
+   },
+   {
+    "key": "Hopeful. || Like I Am Yours",
+    "tag": "acc",
+    "apple_track_id": 1893776443,
+    "release": "2026-05-08",
+    "genre": "Christian Rock",
+    "score": 1.341,
+    "components": {
+     "tone colour": 1.493,
+     "brightness": 1.771,
+     "bass weight": 0.903,
+     "drum density": 1.281,
+     "dynamics": 0.671,
+     "texture": 2.896,
+     "major/minor lean": 1.657,
+     "tempo": 0.114
+    },
+    "features": {
+     "tempo": 151.9991,
+     "rms_db": -11.3552,
+     "rms_std": 4.0305,
+     "crest": 10.002,
+     "low": 0.1172,
+     "sub": 0.0434,
+     "high": 0.209,
+     "mid": 0.4519,
+     "centroid": 2374.6508,
+     "rolloff": 4948.7587,
+     "flatness": 0.0239,
+     "contrast": 18.6179,
+     "perc": 0.469,
+     "onsets": 4.6371,
+     "zcr": 0.1044,
+     "majorness": 0.1287,
+     "f0_med": 93.5022,
+     "voiced": 0.7661
+    }
+   },
+   {
+    "key": "Reagan James Broome || Worth Dying For",
+    "tag": "cand",
+    "apple_track_id": 1890836190,
+    "release": "2026-04-03",
+    "genre": "Christian",
+    "score": 1.351,
+    "components": {
+     "tone colour": 1.364,
+     "brightness": 1.279,
+     "bass weight": 0.65,
+     "drum density": 0.747,
+     "dynamics": 2.192,
+     "texture": 2.224,
+     "major/minor lean": 2.408,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -20.9926,
+     "rms_std": 4.1923,
+     "crest": 18.9675,
+     "low": 0.0829,
+     "sub": 0.0285,
+     "high": 0.1665,
+     "mid": 0.5047,
+     "centroid": 2091.2914,
+     "rolloff": 4157.0424,
+     "flatness": 0.0195,
+     "contrast": 19.9729,
+     "perc": 0.3956,
+     "onsets": 3.3361,
+     "zcr": 0.1073,
+     "majorness": 0.2541,
+     "f0_med": 233.5791,
+     "voiced": 0.7436
+    }
+   },
+   {
+    "key": "Myles Smith || Stargazing",
+    "tag": "cand",
+    "apple_track_id": 1742275653,
+    "release": "2024-05-10",
+    "genre": "Singer/Songwriter",
+    "score": 1.354,
+    "components": {
+     "tone colour": 1.606,
+     "brightness": 1.317,
+     "bass weight": 1.65,
+     "drum density": 0.792,
+     "dynamics": 0.593,
+     "texture": 2.633,
+     "major/minor lean": 1.344,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -10.2138,
+     "rms_std": 3.3327,
+     "crest": 9.4374,
+     "low": 0.1708,
+     "sub": 0.0709,
+     "high": 0.181,
+     "mid": 0.4517,
+     "centroid": 1995.3682,
+     "rolloff": 4564.4052,
+     "flatness": 0.016,
+     "contrast": 18.8851,
+     "perc": 0.4383,
+     "onsets": 4.0366,
+     "zcr": 0.0712,
+     "majorness": 0.0765,
+     "f0_med": 82.8212,
+     "voiced": 0.5546
+    }
+   },
+   {
+    "key": "Brenn! || Days On End",
+    "tag": "cand",
+    "apple_track_id": 1813751649,
+    "release": "2024-11-08",
+    "genre": "Folk",
+    "score": 1.362,
+    "components": {
+     "tone colour": 1.925,
+     "brightness": 1.005,
+     "bass weight": 2.512,
+     "drum density": 0.512,
+     "dynamics": 0.542,
+     "texture": 2.369,
+     "major/minor lean": 1.689,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 107.666,
+     "rms_db": -13.3852,
+     "rms_std": 2.3487,
+     "crest": 12.3281,
+     "low": 0.2241,
+     "sub": 0.0942,
+     "high": 0.1518,
+     "mid": 0.3813,
+     "centroid": 1742.7338,
+     "rolloff": 3958.4482,
+     "flatness": 0.0081,
+     "contrast": 20.2312,
+     "perc": 0.3468,
+     "onsets": 4.1367,
+     "zcr": 0.0599,
+     "majorness": 0.1341,
+     "f0_med": 80.0,
+     "voiced": 0.6971
+    }
+   },
+   {
+    "key": "Beach Chapel || Cardiff",
+    "tag": "acc",
+    "apple_track_id": 6800316485,
+    "release": "2026-09-04",
+    "genre": "Indie Rock",
+    "score": 1.365,
+    "components": {
+     "tone colour": 1.271,
+     "brightness": 0.798,
+     "bass weight": 1.107,
+     "drum density": 1.764,
+     "dynamics": 1.393,
+     "texture": 2.261,
+     "major/minor lean": 2.268,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -14.9673,
+     "rms_std": 6.0896,
+     "crest": 12.2546,
+     "low": 0.1485,
+     "sub": 0.0498,
+     "high": 0.1317,
+     "mid": 0.5002,
+     "centroid": 1671.7232,
+     "rolloff": 3472.7919,
+     "flatness": 0.0103,
+     "contrast": 18.5611,
+     "perc": 0.6485,
+     "onsets": 4.3369,
+     "zcr": 0.0566,
+     "majorness": 0.2307,
+     "f0_med": 83.301,
+     "voiced": 0.8335
+    }
+   },
+   {
+    "key": "Josiah Queen || Garden in Manhattan",
+    "tag": "acc",
+    "apple_track_id": 1744840373,
+    "release": "2023-11-09",
+    "genre": "Christian",
+    "score": 1.39,
+    "components": {
+     "tone colour": 1.544,
+     "brightness": 1.322,
+     "bass weight": 1.067,
+     "drum density": 1.643,
+     "dynamics": 0.592,
+     "texture": 2.851,
+     "major/minor lean": 0.731,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -10.2807,
+     "rms_std": 3.3333,
+     "crest": 9.443,
+     "low": 0.1324,
+     "sub": 0.0499,
+     "high": 0.1812,
+     "mid": 0.4443,
+     "centroid": 2092.5353,
+     "rolloff": 4515.0924,
+     "flatness": 0.0176,
+     "contrast": 18.3165,
+     "perc": 0.5771,
+     "onsets": 4.5704,
+     "zcr": 0.0828,
+     "majorness": -0.0258,
+     "f0_med": 92.4282,
+     "voiced": 0.7095
+    }
+   },
+   {
+    "key": "Jet Trouble || Infinity",
+    "tag": "cand",
+    "apple_track_id": 1802287256,
+    "release": "2025-06-13",
+    "genre": "Christian",
+    "score": 1.39,
+    "components": {
+     "tone colour": 1.504,
+     "brightness": 1.583,
+     "bass weight": 0.676,
+     "drum density": 1.22,
+     "dynamics": 0.391,
+     "texture": 2.634,
+     "major/minor lean": 2.88,
+     "tempo": 1.052
+    },
+    "features": {
+     "tempo": 129.1992,
+     "rms_db": -11.9444,
+     "rms_std": 2.106,
+     "crest": 11.3979,
+     "low": 0.1094,
+     "sub": 0.0214,
+     "high": 0.1958,
+     "mid": 0.4496,
+     "centroid": 2263.6909,
+     "rolloff": 4794.2818,
+     "flatness": 0.0214,
+     "contrast": 19.5302,
+     "perc": 0.464,
+     "onsets": 4.5704,
+     "zcr": 0.0969,
+     "majorness": 0.3328,
+     "f0_med": 92.4282,
+     "voiced": 0.7049
+    }
+   },
+   {
+    "key": "slenderbodies || anemone",
+    "tag": "cand",
+    "apple_track_id": 1219259098,
+    "release": "2017-04-21",
+    "genre": "Alternative",
+    "score": 1.396,
+    "components": {
+     "tone colour": 1.824,
+     "brightness": 1.499,
+     "bass weight": 1.713,
+     "drum density": 0.808,
+     "dynamics": 0.439,
+     "texture": 2.972,
+     "major/minor lean": 0.512,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -11.6948,
+     "rms_std": 2.8388,
+     "crest": 10.3768,
+     "low": 0.1983,
+     "sub": 0.0626,
+     "high": 0.1822,
+     "mid": 0.3736,
+     "centroid": 1898.8352,
+     "rolloff": 4889.9886,
+     "flatness": 0.0104,
+     "contrast": 18.1008,
+     "perc": 0.4268,
+     "onsets": 3.6029,
+     "zcr": 0.0534,
+     "majorness": -0.0622,
+     "f0_med": 92.4282,
+     "voiced": 0.4586
+    }
+   },
+   {
+    "key": "Strings & Heart || flowers dressed in blue",
+    "tag": "acc",
+    "apple_track_id": 6783059368,
+    "release": "2023-07-13",
+    "genre": "Christian Rock",
+    "score": 1.406,
+    "components": {
+     "tone colour": 1.714,
+     "brightness": 1.452,
+     "bass weight": 1.108,
+     "drum density": 0.788,
+     "dynamics": 0.777,
+     "texture": 3.1,
+     "major/minor lean": 2.936,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 161.499,
+     "rms_db": -8.3584,
+     "rms_std": 2.0713,
+     "crest": 7.9166,
+     "low": 0.1362,
+     "sub": 0.0516,
+     "high": 0.1913,
+     "mid": 0.4229,
+     "centroid": 2179.5629,
+     "rolloff": 4531.7218,
+     "flatness": 0.0258,
+     "contrast": 18.4884,
+     "perc": 0.4158,
+     "onsets": 3.5029,
+     "zcr": 0.0945,
+     "majorness": 0.3422,
+     "f0_med": 90.3172,
+     "voiced": 0.4407
+    }
+   },
+   {
+    "key": "Ralph Castelli || Right Hand to God",
+    "tag": "cand",
+    "apple_track_id": 1874784489,
+    "release": "2026-02-13",
+    "genre": "Electronic",
+    "score": 1.424,
+    "components": {
+     "tone colour": 1.629,
+     "brightness": 1.119,
+     "bass weight": 2.063,
+     "drum density": 0.754,
+     "dynamics": 1.004,
+     "texture": 2.378,
+     "major/minor lean": 1.993,
+     "tempo": 1.052
+    },
+    "features": {
+     "tempo": 129.1992,
+     "rms_db": -8.1579,
+     "rms_std": 3.4068,
+     "crest": 7.4481,
+     "low": 0.3116,
+     "sub": 0.0237,
+     "high": 0.1279,
+     "mid": 0.3533,
+     "centroid": 1616.0728,
+     "rolloff": 3707.297,
+     "flatness": 0.004,
+     "contrast": 20.2477,
+     "perc": 0.2947,
+     "onsets": 4.8373,
+     "zcr": 0.03,
+     "majorness": 0.1848,
+     "f0_med": 88.2543,
+     "voiced": 0.9946
+    }
+   },
+   {
+    "key": "Riverly || Safe and Sound",
+    "tag": "acc",
+    "apple_track_id": 1850983130,
+    "release": "2025-11-13",
+    "genre": "Pop",
+    "score": 1.428,
+    "components": {
+     "tone colour": 1.549,
+     "brightness": 1.178,
+     "bass weight": 0.931,
+     "drum density": 2.014,
+     "dynamics": 0.53,
+     "texture": 2.499,
+     "major/minor lean": 2.252,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -13.0174,
+     "rms_std": 2.9821,
+     "crest": 11.9639,
+     "low": 0.1522,
+     "sub": 0.0399,
+     "high": 0.1663,
+     "mid": 0.4418,
+     "centroid": 1974.2437,
+     "rolloff": 4344.2028,
+     "flatness": 0.0152,
+     "contrast": 19.5384,
+     "perc": 0.5765,
+     "onsets": 5.1709,
+     "zcr": 0.0736,
+     "majorness": 0.228,
+     "f0_med": 103.7472,
+     "voiced": 0.7816
+    }
+   },
+   {
+    "key": "Beach Chapel || Woke Up",
+    "tag": "acc",
+    "apple_track_id": 6773904771,
+    "release": "2026-07-03",
+    "genre": "Indie Rock",
+    "score": 1.431,
+    "components": {
+     "tone colour": 1.849,
+     "brightness": 1.994,
+     "bass weight": 0.586,
+     "drum density": 0.576,
+     "dynamics": 2.077,
+     "texture": 2.03,
+     "major/minor lean": 0.445,
+     "tempo": 0.856
+    },
+    "features": {
+     "tempo": 89.1029,
+     "rms_db": -19.7956,
+     "rms_std": 4.8838,
+     "crest": 17.3883,
+     "low": 0.039,
+     "sub": 0.0078,
+     "high": 0.2339,
+     "mid": 0.5226,
+     "centroid": 2441.6499,
+     "rolloff": 5402.649,
+     "flatness": 0.0225,
+     "contrast": 20.7375,
+     "perc": 0.3108,
+     "onsets": 3.1025,
+     "zcr": 0.1032,
+     "majorness": -0.1365,
+     "f0_med": 219.8326,
+     "voiced": 0.8064
+    }
+   },
+   {
+    "key": "Gable Price and Friends || One Bedroom Apartment",
+    "tag": "acc",
+    "apple_track_id": 6799278791,
+    "release": "2026-08-21",
+    "genre": "Christian",
+    "score": 1.432,
+    "components": {
+     "tone colour": 1.598,
+     "brightness": 0.823,
+     "bass weight": 2.73,
+     "drum density": 0.526,
+     "dynamics": 1.633,
+     "texture": 2.68,
+     "major/minor lean": 2.082,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -16.635,
+     "rms_std": 4.8891,
+     "crest": 15.1928,
+     "low": 0.2296,
+     "sub": 0.1035,
+     "high": 0.1328,
+     "mid": 0.4086,
+     "centroid": 1545.1203,
+     "rolloff": 3217.2957,
+     "flatness": 0.0108,
+     "contrast": 18.7197,
+     "perc": 0.3363,
+     "onsets": 3.3361,
+     "zcr": 0.0474,
+     "majorness": 0.1996,
+     "f0_med": 82.3442,
+     "voiced": 0.8575
+    }
+   },
+   {
+    "key": "Stephen Dawes || Sadie",
+    "tag": "cand",
+    "apple_track_id": 1663919377,
+    "release": "2022-06-02",
+    "genre": "Pop",
+    "score": 1.441,
+    "components": {
+     "tone colour": 1.705,
+     "brightness": 1.253,
+     "bass weight": 0.612,
+     "drum density": 1.272,
+     "dynamics": 1.964,
+     "texture": 1.928,
+     "major/minor lean": 2.717,
+     "tempo": 0.481
+    },
+    "features": {
+     "tempo": 112.3471,
+     "rms_db": -19.1837,
+     "rms_std": 4.6159,
+     "crest": 17.2257,
+     "low": 0.0384,
+     "sub": 0.0067,
+     "high": 0.1771,
+     "mid": 0.4977,
+     "centroid": 2074.4564,
+     "rolloff": 4300.244,
+     "flatness": 0.0208,
+     "contrast": 21.4921,
+     "perc": 0.4527,
+     "onsets": 2.8356,
+     "zcr": 0.0884,
+     "majorness": 0.3057,
+     "f0_med": 156.3456,
+     "voiced": 0.6235
+    }
+   },
+   {
+    "key": "Caleb King || Carpenter Boy",
+    "tag": "cand",
+    "apple_track_id": 1875838347,
+    "release": "2026-02-27",
+    "genre": "Christian",
+    "score": 1.442,
+    "components": {
+     "tone colour": 2.014,
+     "brightness": 1.331,
+     "bass weight": 0.677,
+     "drum density": 0.656,
+     "dynamics": 2.207,
+     "texture": 1.873,
+     "major/minor lean": 2.052,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -19.5062,
+     "rms_std": 6.5213,
+     "crest": 15.6405,
+     "low": 0.0574,
+     "sub": 0.0031,
+     "high": 0.1752,
+     "mid": 0.4094,
+     "centroid": 1898.7629,
+     "rolloff": 4446.9317,
+     "flatness": 0.0082,
+     "contrast": 21.9947,
+     "perc": 0.2399,
+     "onsets": 2.9024,
+     "zcr": 0.057,
+     "majorness": 0.1946,
+     "f0_med": 178.5595,
+     "voiced": 0.89
+    }
+   },
+   {
+    "key": "HARBOUR || Get You High",
+    "tag": "cand",
+    "apple_track_id": 1750729165,
+    "release": "2017-08-04",
+    "genre": "Alternative",
+    "score": 1.448,
+    "components": {
+     "tone colour": 1.738,
+     "brightness": 1.771,
+     "bass weight": 0.755,
+     "drum density": 1.01,
+     "dynamics": 0.364,
+     "texture": 2.596,
+     "major/minor lean": 2.682,
+     "tempo": 1.052
+    },
+    "features": {
+     "tempo": 86.1328,
+     "rms_db": -10.7416,
+     "rms_std": 2.0602,
+     "crest": 10.3485,
+     "low": 0.1144,
+     "sub": 0.0318,
+     "high": 0.2253,
+     "mid": 0.4454,
+     "centroid": 2290.8133,
+     "rolloff": 5106.6216,
+     "flatness": 0.0209,
+     "contrast": 19.7249,
+     "perc": 0.4437,
+     "onsets": 3.2026,
+     "zcr": 0.0895,
+     "majorness": 0.2998,
+     "f0_med": 97.3603,
+     "voiced": 0.7273
+    }
+   },
+   {
+    "key": "Living Again || Cynical and Jaded",
+    "tag": "acc",
+    "apple_track_id": 6771585414,
+    "release": "2026-06-19",
+    "genre": "Christian Rock",
+    "score": 1.451,
+    "components": {
+     "tone colour": 1.651,
+     "brightness": 1.195,
+     "bass weight": 0.907,
+     "drum density": 1.377,
+     "dynamics": 0.384,
+     "texture": 3.167,
+     "major/minor lean": 2.588,
+     "tempo": 1.098
+    },
+    "features": {
+     "tempo": 83.3543,
+     "rms_db": -10.8173,
+     "rms_std": 1.7596,
+     "crest": 10.4768,
+     "low": 0.1625,
+     "sub": 0.0289,
+     "high": 0.1693,
+     "mid": 0.4047,
+     "centroid": 1892.8679,
+     "rolloff": 4204.9125,
+     "flatness": 0.0154,
+     "contrast": 17.4807,
+     "perc": 0.456,
+     "onsets": 4.8706,
+     "zcr": 0.0615,
+     "majorness": 0.2841,
+     "f0_med": 90.8404,
+     "voiced": 0.6778
+    }
+   },
+   {
+    "key": "Tate Butts || My Defender",
+    "tag": "cand",
+    "apple_track_id": 1855986752,
+    "release": "2025-11-21",
+    "genre": "Christian Pop",
+    "score": 1.452,
+    "components": {
+     "tone colour": 1.772,
+     "brightness": 1.446,
+     "bass weight": 1.504,
+     "drum density": 0.989,
+     "dynamics": 0.459,
+     "texture": 2.559,
+     "major/minor lean": 2.055,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -10.1036,
+     "rms_std": 1.5346,
+     "crest": 9.8436,
+     "low": 0.167,
+     "sub": 0.0648,
+     "high": 0.1926,
+     "mid": 0.4174,
+     "centroid": 2126.039,
+     "rolloff": 4768.512,
+     "flatness": 0.0161,
+     "contrast": 19.8853,
+     "perc": 0.3768,
+     "onsets": 2.8356,
+     "zcr": 0.085,
+     "majorness": 0.1952,
+     "f0_med": 104.3482,
+     "voiced": 0.5089
+    }
+   },
+   {
+    "key": "Thomas Day || she got a thing about her",
+    "tag": "cand",
+    "apple_track_id": 1843160464,
+    "release": "2025-10-09",
+    "genre": "Pop",
+    "score": 1.461,
+    "components": {
+     "tone colour": 1.552,
+     "brightness": 1.529,
+     "bass weight": 1.197,
+     "drum density": 1.826,
+     "dynamics": 0.653,
+     "texture": 2.857,
+     "major/minor lean": 1.115,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -10.2027,
+     "rms_std": 3.3616,
+     "crest": 9.1548,
+     "low": 0.1192,
+     "sub": 0.0588,
+     "high": 0.1926,
+     "mid": 0.4936,
+     "centroid": 2248.6772,
+     "rolloff": 4675.2487,
+     "flatness": 0.0253,
+     "contrast": 18.0721,
+     "perc": 0.7152,
+     "onsets": 4.0366,
+     "zcr": 0.0952,
+     "majorness": 0.0384,
+     "f0_med": 94.5886,
+     "voiced": 0.4771
+    }
+   },
+   {
+    "key": "Noah Kahan || Orange Juice",
+    "tag": "cand",
+    "apple_track_id": 1644777298,
+    "release": "2022-10-14",
+    "genre": "Alternative",
+    "score": 1.467,
+    "components": {
+     "tone colour": 2.462,
+     "brightness": 1.134,
+     "bass weight": 0.922,
+     "drum density": 0.408,
+     "dynamics": 1.115,
+     "texture": 1.817,
+     "major/minor lean": 2.395,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -22.4566,
+     "rms_std": 3.5775,
+     "crest": 14.5556,
+     "low": 0.0138,
+     "sub": 0.0006,
+     "high": 0.1749,
+     "mid": 0.4195,
+     "centroid": 1922.523,
+     "rolloff": 3997.8869,
+     "flatness": 0.0119,
+     "contrast": 23.6748,
+     "perc": 0.2032,
+     "onsets": 4.0366,
+     "zcr": 0.0666,
+     "majorness": 0.2519,
+     "f0_med": 184.8564,
+     "voiced": 0.9287
+    }
+   },
+   {
+    "key": "DWLLRS || new spirits",
+    "tag": "dwllrs",
+    "apple_track_id": 6769946375,
+    "release": "2026-06-05",
+    "genre": "Alternative",
+    "score": 1.479,
+    "components": {
+     "tone colour": 1.484,
+     "brightness": 1.297,
+     "bass weight": 2.161,
+     "drum density": 1.779,
+     "dynamics": 0.412,
+     "texture": 2.599,
+     "major/minor lean": 1.627,
+     "tempo": 0.756
+    },
+    "features": {
+     "tempo": 135.9992,
+     "rms_db": -10.5877,
+     "rms_std": 2.3053,
+     "crest": 9.9876,
+     "low": 0.1837,
+     "sub": 0.0927,
+     "high": 0.1807,
+     "mid": 0.461,
+     "centroid": 2028.1541,
+     "rolloff": 4480.4408,
+     "flatness": 0.0154,
+     "contrast": 18.7572,
+     "perc": 0.4802,
+     "onsets": 5.3711,
+     "zcr": 0.0767,
+     "majorness": 0.1237,
+     "f0_med": 92.9636,
+     "voiced": 0.3749
+    }
+   },
+   {
+    "key": "Living Again || Dive Into",
+    "tag": "acc",
+    "apple_track_id": 1851517625,
+    "release": "2025-12-05",
+    "genre": "Christian Rock",
+    "score": 1.485,
+    "components": {
+     "tone colour": 1.688,
+     "brightness": 1.605,
+     "bass weight": 0.826,
+     "drum density": 1.775,
+     "dynamics": 0.353,
+     "texture": 3.215,
+     "major/minor lean": 2.101,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -11.2072,
+     "rms_std": 2.1942,
+     "crest": 10.6937,
+     "low": 0.1425,
+     "sub": 0.0312,
+     "high": 0.212,
+     "mid": 0.4022,
+     "centroid": 2187.9662,
+     "rolloff": 4825.8143,
+     "flatness": 0.0251,
+     "contrast": 18.3555,
+     "perc": 0.5348,
+     "onsets": 5.0374,
+     "zcr": 0.0768,
+     "majorness": 0.2028,
+     "f0_med": 104.9526,
+     "voiced": 0.8265
+    }
+   },
+   {
+    "key": "Aidan Bissett || my funeral",
+    "tag": "cand",
+    "apple_track_id": 1828093415,
+    "release": "2025-07-24",
+    "genre": "Alternative",
+    "score": 1.511,
+    "components": {
+     "tone colour": 1.545,
+     "brightness": 2.006,
+     "bass weight": 0.724,
+     "drum density": 0.896,
+     "dynamics": 1.28,
+     "texture": 3.205,
+     "major/minor lean": 2.871,
+     "tempo": 0.654
+    },
+    "features": {
+     "tempo": 92.2852,
+     "rms_db": -15.2841,
+     "rms_std": 4.5863,
+     "crest": 13.8948,
+     "low": 0.1186,
+     "sub": 0.0252,
+     "high": 0.2453,
+     "mid": 0.3969,
+     "centroid": 2435.3754,
+     "rolloff": 5388.4547,
+     "flatness": 0.0323,
+     "contrast": 19.0304,
+     "perc": 0.4217,
+     "onsets": 4.3035,
+     "zcr": 0.094,
+     "majorness": 0.3313,
+     "f0_med": 111.1935,
+     "voiced": 0.7862
+    }
+   },
+   {
+    "key": "DWLLRS || Driving",
+    "tag": "dwllrs",
+    "apple_track_id": 1676562036,
+    "release": "2023-03-24",
+    "genre": "Pop",
+    "score": 1.516,
+    "components": {
+     "tone colour": 2.3,
+     "brightness": 0.769,
+     "bass weight": 0.871,
+     "drum density": 0.879,
+     "dynamics": 3.622,
+     "texture": 1.346,
+     "major/minor lean": 0.445,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 95.7031,
+     "rms_db": -18.0991,
+     "rms_std": 11.4063,
+     "crest": 15.4755,
+     "low": 0.0201,
+     "sub": 0.0007,
+     "high": 0.0377,
+     "mid": 0.6951,
+     "centroid": 1323.2439,
+     "rolloff": 2460.277,
+     "flatness": 0.0061,
+     "contrast": 21.5204,
+     "perc": 0.3923,
+     "onsets": 3.1049,
+     "zcr": 0.0886,
+     "majorness": -0.1366,
+     "f0_med": 248.1832,
+     "voiced": 0.6178
+    }
+   },
+   {
+    "key": "Gable Price and Friends || Too Good",
+    "tag": "acc",
+    "apple_track_id": 6815704599,
+    "release": "2026-02-13",
+    "genre": "Christian",
+    "score": 1.522,
+    "components": {
+     "tone colour": 1.369,
+     "brightness": 1.441,
+     "bass weight": 1.118,
+     "drum density": 2.023,
+     "dynamics": 0.955,
+     "texture": 2.795,
+     "major/minor lean": 3.051,
+     "tempo": 0.608
+    },
+    "features": {
+     "tempo": 172.2656,
+     "rms_db": -14.7976,
+     "rms_std": 3.8972,
+     "crest": 13.2997,
+     "low": 0.1235,
+     "sub": 0.0539,
+     "high": 0.1962,
+     "mid": 0.4512,
+     "centroid": 2158.2603,
+     "rolloff": 4411.5795,
+     "flatness": 0.0287,
+     "contrast": 19.437,
+     "perc": 0.7401,
+     "onsets": 4.2034,
+     "zcr": 0.0958,
+     "majorness": 0.3613,
+     "f0_med": 108.028,
+     "voiced": 0.6538
+    }
+   },
+   {
+    "key": "Chance Peña || How Long, How Low?",
+    "tag": "acc",
+    "apple_track_id": 1810695264,
+    "release": "2025-05-09",
+    "genre": "Folk",
+    "score": 1.524,
+    "components": {
+     "tone colour": 1.912,
+     "brightness": 1.099,
+     "bass weight": 1.889,
+     "drum density": 1.481,
+     "dynamics": 0.911,
+     "texture": 2.256,
+     "major/minor lean": 1.744,
+     "tempo": 0.654
+    },
+    "features": {
+     "tempo": 92.2852,
+     "rms_db": -13.7391,
+     "rms_std": 4.6705,
+     "crest": 11.9523,
+     "low": 0.23,
+     "sub": 0.0586,
+     "high": 0.0928,
+     "mid": 0.4108,
+     "centroid": 1211.7182,
+     "rolloff": 2208.8713,
+     "flatness": 0.0041,
+     "contrast": 19.6585,
+     "perc": 0.5698,
+     "onsets": 3.2026,
+     "zcr": 0.0429,
+     "majorness": 0.1432,
+     "f0_med": 87.2406,
+     "voiced": 0.6971
+    }
+   },
+   {
+    "key": "Ethan Regan || peach tree",
+    "tag": "cand",
+    "apple_track_id": 1868819300,
+    "release": "2024-09-26",
+    "genre": "Alternative Folk",
+    "score": 1.529,
+    "components": {
+     "tone colour": 2.121,
+     "brightness": 1.0,
+     "bass weight": 0.932,
+     "drum density": 0.316,
+     "dynamics": 2.734,
+     "texture": 2.066,
+     "major/minor lean": 2.223,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -30.846,
+     "rms_std": 7.0231,
+     "crest": 17.5036,
+     "low": 0.0098,
+     "sub": 0.0018,
+     "high": 0.1518,
+     "mid": 0.4553,
+     "centroid": 1775.599,
+     "rolloff": 3695.7798,
+     "flatness": 0.0112,
+     "contrast": 20.4597,
+     "perc": 0.2277,
+     "onsets": 4.0366,
+     "zcr": 0.0545,
+     "majorness": 0.2232,
+     "f0_med": 191.3754,
+     "voiced": 0.9009
+    }
+   },
+   {
+    "key": "Chance Peña || i am not who i was",
+    "tag": "acc",
+    "apple_track_id": 1705982596,
+    "release": "2023-09-21",
+    "genre": "Indie Pop",
+    "score": 1.532,
+    "components": {
+     "tone colour": 1.915,
+     "brightness": 1.001,
+     "bass weight": 3.234,
+     "drum density": 0.632,
+     "dynamics": 1.083,
+     "texture": 1.992,
+     "major/minor lean": 1.283,
+     "tempo": 1.052
+    },
+    "features": {
+     "tempo": 129.1992,
+     "rms_db": -16.0622,
+     "rms_std": 2.7404,
+     "crest": 14.8056,
+     "low": 0.3206,
+     "sub": 0.0918,
+     "high": 0.1019,
+     "mid": 0.3714,
+     "centroid": 1283.4264,
+     "rolloff": 2628.7854,
+     "flatness": 0.0028,
+     "contrast": 21.5507,
+     "perc": 0.1849,
+     "onsets": 3.2693,
+     "zcr": 0.0308,
+     "majorness": 0.0664,
+     "f0_med": 80.0,
+     "voiced": 0.8706
+    }
+   },
+   {
+    "key": "Arden Jones || deadlove",
+    "tag": "acc",
+    "apple_track_id": 6793820664,
+    "release": "2026-02-26",
+    "genre": "Pop",
+    "score": 1.555,
+    "components": {
+     "tone colour": 1.622,
+     "brightness": 2.184,
+     "bass weight": 1.061,
+     "drum density": 1.376,
+     "dynamics": 0.685,
+     "texture": 3.582,
+     "major/minor lean": 0.577,
+     "tempo": 1.006
+    },
+    "features": {
+     "tempo": 123.0469,
+     "rms_db": -9.7038,
+     "rms_std": 2.9031,
+     "crest": 8.778,
+     "low": 0.1304,
+     "sub": 0.0499,
+     "high": 0.2462,
+     "mid": 0.4221,
+     "centroid": 2627.8183,
+     "rolloff": 5651.9905,
+     "flatness": 0.0377,
+     "contrast": 17.2682,
+     "perc": 0.3721,
+     "onsets": 5.3711,
+     "zcr": 0.1033,
+     "majorness": -0.0513,
+     "f0_med": 92.4282,
+     "voiced": 0.78
+    }
+   },
+   {
+    "key": "mor || Fill My Lungs",
+    "tag": "cand",
+    "apple_track_id": 6797502939,
+    "release": "2026-08-21",
+    "genre": "Country",
+    "score": 1.555,
+    "components": {
+     "tone colour": 1.8,
+     "brightness": 2.448,
+     "bass weight": 1.135,
+     "drum density": 0.811,
+     "dynamics": 0.607,
+     "texture": 3.541,
+     "major/minor lean": 1.608,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -9.6677,
+     "rms_std": 1.2406,
+     "crest": 9.4837,
+     "low": 0.14,
+     "sub": 0.0525,
+     "high": 0.2778,
+     "mid": 0.3841,
+     "centroid": 2657.1083,
+     "rolloff": 5867.0223,
+     "flatness": 0.0355,
+     "contrast": 18.0686,
+     "perc": 0.3904,
+     "onsets": 3.2026,
+     "zcr": 0.1095,
+     "majorness": 0.1206,
+     "f0_med": 91.8959,
+     "voiced": 0.5492
+    }
+   },
+   {
+    "key": "Sjowgren || Seventeen",
+    "tag": "cand",
+    "apple_track_id": 1485584165,
+    "release": "2015-06-02",
+    "genre": "Alternative",
+    "score": 1.572,
+    "components": {
+     "tone colour": 1.79,
+     "brightness": 1.972,
+     "bass weight": 0.649,
+     "drum density": 1.122,
+     "dynamics": 0.759,
+     "texture": 3.723,
+     "major/minor lean": 2.913,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -8.8286,
+     "rms_std": 1.3098,
+     "crest": 8.6325,
+     "low": 0.1108,
+     "sub": 0.0165,
+     "high": 0.2469,
+     "mid": 0.3462,
+     "centroid": 2420.2529,
+     "rolloff": 5258.7802,
+     "flatness": 0.0283,
+     "contrast": 17.5788,
+     "perc": 0.4599,
+     "onsets": 4.437,
+     "zcr": 0.0914,
+     "majorness": 0.3383,
+     "f0_med": 101.9649,
+     "voiced": 0.7157
+    }
+   },
+   {
+    "key": "Buffalo Traffic Jam || Buyin' Dirt",
+    "tag": "cand",
+    "apple_track_id": 6764176258,
+    "release": "2026-07-31",
+    "genre": "Country",
+    "score": 1.573,
+    "components": {
+     "tone colour": 1.888,
+     "brightness": 1.828,
+     "bass weight": 1.232,
+     "drum density": 1.264,
+     "dynamics": 0.465,
+     "texture": 3.255,
+     "major/minor lean": 2.474,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -12.6407,
+     "rms_std": 2.5501,
+     "crest": 11.8515,
+     "low": 0.1726,
+     "sub": 0.0479,
+     "high": 0.2202,
+     "mid": 0.3826,
+     "centroid": 2311.3684,
+     "rolloff": 5490.2663,
+     "flatness": 0.0271,
+     "contrast": 18.7391,
+     "perc": 0.5655,
+     "onsets": 3.9032,
+     "zcr": 0.0799,
+     "majorness": 0.265,
+     "f0_med": 87.2406,
+     "voiced": 0.8885
+    }
+   },
+   {
+    "key": "gavn! || Good Terms",
+    "tag": "cand",
+    "apple_track_id": 1875222626,
+    "release": "2026-02-20",
+    "genre": "Pop",
+    "score": 1.573,
+    "components": {
+     "tone colour": 1.772,
+     "brightness": 1.447,
+     "bass weight": 2.057,
+     "drum density": 1.424,
+     "dynamics": 0.844,
+     "texture": 2.996,
+     "major/minor lean": 2.473,
+     "tempo": 0.114
+    },
+    "features": {
+     "tempo": 151.9991,
+     "rms_db": -8.3771,
+     "rms_std": 2.5748,
+     "crest": 7.8335,
+     "low": 0.2058,
+     "sub": 0.0778,
+     "high": 0.1856,
+     "mid": 0.4264,
+     "centroid": 2053.6018,
+     "rolloff": 4773.9161,
+     "flatness": 0.0153,
+     "contrast": 17.7641,
+     "perc": 0.4296,
+     "onsets": 5.1042,
+     "zcr": 0.0659,
+     "majorness": 0.2649,
+     "f0_med": 82.8212,
+     "voiced": 0.5624
+    }
+   },
+   {
+    "key": "Ryan Ellis || NO HALO",
+    "tag": "cand",
+    "apple_track_id": 6770581745,
+    "release": "2026-08-14",
+    "genre": "Alternative",
+    "score": 1.573,
+    "components": {
+     "tone colour": 1.749,
+     "brightness": 1.649,
+     "bass weight": 1.776,
+     "drum density": 1.213,
+     "dynamics": 1.338,
+     "texture": 2.93,
+     "major/minor lean": 2.082,
+     "tempo": 0.236
+    },
+    "features": {
+     "tempo": 161.499,
+     "rms_db": -9.1303,
+     "rms_std": 4.7984,
+     "crest": 7.6677,
+     "low": 0.1784,
+     "sub": 0.0745,
+     "high": 0.2122,
+     "mid": 0.4143,
+     "centroid": 2205.5076,
+     "rolloff": 4962.3942,
+     "flatness": 0.0179,
+     "contrast": 18.6032,
+     "perc": 0.4286,
+     "onsets": 4.7706,
+     "zcr": 0.0755,
+     "majorness": 0.1997,
+     "f0_med": 82.3442,
+     "voiced": 0.6514
+    }
+   },
+   {
+    "key": "DWLLRS || pretty for someone",
+    "tag": "dwllrs",
+    "apple_track_id": 1878215321,
+    "release": "2026-02-20",
+    "genre": "Alternative",
+    "score": 1.586,
+    "components": {
+     "tone colour": 1.468,
+     "brightness": 2.107,
+     "bass weight": 0.665,
+     "drum density": 2.299,
+     "dynamics": 0.736,
+     "texture": 3.311,
+     "major/minor lean": 2.494,
+     "tempo": 0.114
+    },
+    "features": {
+     "tempo": 151.9991,
+     "rms_db": -13.8178,
+     "rms_std": 2.9043,
+     "crest": 13.0162,
+     "low": 0.0905,
+     "sub": 0.0277,
+     "high": 0.2479,
+     "mid": 0.4289,
+     "centroid": 2479.1671,
+     "rolloff": 5493.9691,
+     "flatness": 0.0338,
+     "contrast": 18.0467,
+     "perc": 0.594,
+     "onsets": 2.035,
+     "zcr": 0.1044,
+     "majorness": 0.2684,
+     "f0_med": 91.8959,
+     "voiced": 0.6414
+    }
+   },
+   {
+    "key": "Hopeful. || Everything Is Better",
+    "tag": "acc",
+    "apple_track_id": 1880188777,
+    "release": "2025-07-18",
+    "genre": "Christian Rock",
+    "score": 1.61,
+    "components": {
+     "tone colour": 1.493,
+     "brightness": 2.618,
+     "bass weight": 0.69,
+     "drum density": 2.107,
+     "dynamics": 0.517,
+     "texture": 3.952,
+     "major/minor lean": 0.652,
+     "tempo": 0.444
+    },
+    "features": {
+     "tempo": 143.5547,
+     "rms_db": -10.2005,
+     "rms_std": 2.6851,
+     "crest": 9.4971,
+     "low": 0.0889,
+     "sub": 0.0323,
+     "high": 0.2742,
+     "mid": 0.4111,
+     "centroid": 2785.6447,
+     "rolloff": 6082.2042,
+     "flatness": 0.06,
+     "contrast": 16.9005,
+     "perc": 0.6902,
+     "onsets": 4.6371,
+     "zcr": 0.1183,
+     "majorness": -0.2403,
+     "f0_med": 92.9636,
+     "voiced": 0.7692
+    }
+   },
+   {
+    "key": "Bay Ledges || Safe",
+    "tag": "cand",
+    "apple_track_id": 1472225006,
+    "release": "2016-11-03",
+    "genre": "Alternative",
+    "score": 1.649,
+    "components": {
+     "tone colour": 1.629,
+     "brightness": 2.464,
+     "bass weight": 0.82,
+     "drum density": 1.884,
+     "dynamics": 0.895,
+     "texture": 3.476,
+     "major/minor lean": 2.334,
+     "tempo": 0.0
+    },
+    "features": {
+     "tempo": 103.3594,
+     "rms_db": -11.9559,
+     "rms_std": 4.8072,
+     "crest": 10.0998,
+     "low": 0.1221,
+     "sub": 0.0382,
+     "high": 0.2615,
+     "mid": 0.3864,
+     "centroid": 2690.8979,
+     "rolloff": 5807.7934,
+     "flatness": 0.0398,
+     "contrast": 18.534,
+     "perc": 0.7196,
+     "onsets": 4.1033,
+     "zcr": 0.1176,
+     "majorness": 0.2418,
+     "f0_med": 82.3442,
+     "voiced": 0.488
+    }
+   },
+   {
+    "key": "Grace Runkle || open handed",
+    "tag": "cand",
+    "apple_track_id": 1886523496,
+    "release": "2026-04-17",
+    "genre": "Christian Pop",
+    "score": 1.681,
+    "components": {
+     "tone colour": 1.96,
+     "brightness": 1.185,
+     "bass weight": 2.886,
+     "drum density": 1.319,
+     "dynamics": 0.416,
+     "texture": 3.032,
+     "major/minor lean": 1.924,
+     "tempo": 1.052
+    },
+    "features": {
+     "tempo": 129.1992,
+     "rms_db": -12.0895,
+     "rms_std": 2.7458,
+     "crest": 10.8323,
+     "low": 0.2637,
+     "sub": 0.0974,
+     "high": 0.1623,
+     "mid": 0.3523,
+     "centroid": 1822.9304,
+     "rolloff": 4043.7721,
+     "flatness": 0.0102,
+     "contrast": 18.2267,
+     "perc": 0.5128,
+     "onsets": 4.437,
+     "zcr": 0.0516,
+     "majorness": 0.1733,
+     "f0_med": 83.301,
+     "voiced": 0.89
+    }
+   },
+   {
+    "key": "Forrest Frank || LIFE IS GOOD",
+    "tag": "cand",
+    "apple_track_id": 1755273603,
+    "release": "2024-07-26",
+    "genre": "Christian",
+    "score": 1.871,
+    "components": {
+     "tone colour": 1.732,
+     "brightness": 1.99,
+     "bass weight": 2.273,
+     "drum density": 2.473,
+     "dynamics": 1.324,
+     "texture": 3.634,
+     "major/minor lean": 0.412,
+     "tempo": 0.756
+    },
+    "features": {
+     "tempo": 135.9992,
+     "rms_db": -11.5391,
+     "rms_std": 5.4282,
+     "crest": 8.6572,
+     "low": 0.1874,
+     "sub": 0.0971,
+     "high": 0.2355,
+     "mid": 0.3575,
+     "centroid": 2458.997,
+     "rolloff": 5500.8577,
+     "flatness": 0.0315,
+     "contrast": 17.9518,
+     "perc": 0.7995,
+     "onsets": 4.5704,
+     "zcr": 0.0934,
+     "majorness": -0.0925,
+     "f0_med": 80.0,
+     "voiced": 0.4818
+    }
+   },
+   {
+    "key": "Sam Nicholson || Rule This Town",
+    "tag": "cand",
+    "apple_track_id": 1787060219,
+    "release": "2025-01-10",
+    "genre": "Pop",
+    "score": 1.95,
+    "components": {
+     "tone colour": 1.879,
+     "brightness": 2.85,
+     "bass weight": 1.278,
+     "drum density": 2.39,
+     "dynamics": 0.738,
+     "texture": 4.257,
+     "major/minor lean": 1.093,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -13.6204,
+     "rms_std": 3.7737,
+     "crest": 12.409,
+     "low": 0.142,
+     "sub": 0.0598,
+     "high": 0.2958,
+     "mid": 0.3393,
+     "centroid": 2825.9457,
+     "rolloff": 6262.1173,
+     "flatness": 0.0599,
+     "contrast": 17.034,
+     "perc": 0.7548,
+     "onsets": 4.7038,
+     "zcr": 0.1263,
+     "majorness": 0.0346,
+     "f0_med": 82.8212,
+     "voiced": 0.5376
+    }
+   },
+   {
+    "key": "Forrest Frank || OKAY!",
+    "tag": "cand",
+    "apple_track_id": 6765792669,
+    "release": "2026-05-03",
+    "genre": "Christian",
+    "score": 2.02,
+    "components": {
+     "tone colour": 1.858,
+     "brightness": 3.801,
+     "bass weight": 0.88,
+     "drum density": 1.79,
+     "dynamics": 2.427,
+     "texture": 3.271,
+     "major/minor lean": 0.491,
+     "tempo": 0.738
+    },
+    "features": {
+     "tempo": 117.4538,
+     "rms_db": -17.9255,
+     "rms_std": 8.2487,
+     "crest": 14.1975,
+     "low": 0.0172,
+     "sub": 0.0014,
+     "high": 0.3398,
+     "mid": 0.4029,
+     "centroid": 3377.062,
+     "rolloff": 7023.9389,
+     "flatness": 0.0675,
+     "contrast": 20.1815,
+     "perc": 0.6697,
+     "onsets": 3.3053,
+     "zcr": 0.1656,
+     "majorness": -0.1595,
+     "f0_med": 181.6807,
+     "voiced": 0.8822
+    }
+   }
   ]
  },
  "counts": {
-  "artists_investigated": 45,
-  "artists_surfaced_unassessed": 34,
   "artists_accepted": 15,
-  "recordings_accepted": 26,
+  "recordings_listed": 25,
+  "recordings_measured": 24,
   "by_lane": {
-   "faith-indie": 8,
-   "indie-folk": 5,
-   "alt-pop": 2
-  },
-  "recordings_by_confidence": {
-   "High": 5,
-   "Medium": 15,
-   "Low": 6
-  },
-  "playlists_resolved": 15,
-  "playlists_verified_cooccurrence": 9,
-  "playlists_context_clues": 1
- },
- "csv_audit": {
-  "rows": 743,
-  "distinct_pairs": 731,
-  "repeated_pairs": 12,
-  "blank_country": 743,
-  "date_added_range": "2026-04-10 to 2026-09-08",
-  "adds_by_month": {
-   "2026-04": 412,
-   "2026-05": 163,
-   "2026-06": 91,
-   "2026-07": 47,
-   "2026-08": 25,
-   "2026-09": 5
-  },
-  "name_keyword_hits": {
-   "jesus": 57,
-   "worship": 49,
-   "christian": 39,
-   "vibe": 20,
-   "god": 17,
-   "chill": 16,
-   "summer": 14,
-   "indie": 14,
-   "gospel": 8,
-   "night": 6,
-   "folk": 5,
-   "alt": 5,
-   "pop": 5
+   "hazy-pop": 3,
+   "soft-folk-pop": 8,
+   "faith-pop": 4
   }
  },
  "artists": [
   {
-   "rank": 1,
-   "name": "Gable Price and Friends",
-   "lane": "faith-indie",
-   "spotify_artist": "6d9rhdwIVsqblUFXu7qEBp",
-   "home": "Redding, CA · Capitol CMG",
-   "monthly": "446,499",
-   "identity": "Spotify About places the band 'in the lineage of Gang of Youths, Kings of Leon, COIN, and The Killers'; 33-show 2026 run opening for Josiah Queen. 'One Bedroom Apartment' is written and produced with Chase Lawrence of COIN (Shazam credits).",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Pop-leaning indie rock; 96 BPM vs the seed's 103; acoustic-led verses into bigger choruses per press. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     "Male lead; delivery not assessed by ear."
-    ],
-    "mood": [
-     "High",
-     "First-person faith devotion while living modestly — the same 'ordinary life, named faith' register as the seed, without worship-service framing."
-    ],
-    "audience": [
-     "High",
-     "Shazam's similar-songs list for the seed includes this track, and the seed appears reciprocally in this track's list. Co-placed with the seed in Jesse Frohling's 'Upbeat Christian songs' and present in Near Kingdom's Christian Indie Hits (Chartmetric pitch suggestion)."
-    ]
-   },
-   "evidence": "High",
-   "why": "Only candidate with reciprocal algorithmic similarity plus verified playlist co-occurrence plus a credible press-described sound.",
-   "spotify_artist_url": "https://open.spotify.com/artist/6d9rhdwIVsqblUFXu7qEBp",
+   "name": "Jonthekid.",
+   "lane": "faith-pop",
+   "sp_artist": "46wfT6CauKi8S9Fhqj8TM3",
+   "monthly": "11,146",
+   "home": "independent (label 'Human Heart'; writer/producer Jonathan Ingersoll)",
+   "who": "Spotify About: 'a young husband, father, and creative whose life has been radically changed by Jesus Christ'; raised on John Mayer and Carrie Underwood, then hip-hop. Shazam tags the single Hip-Hop/Rap, but the organ version measures as the closest clip in the pool to the seed.",
+   "mood": "Prayerful, first-person, devotional — the seed's bridge turned into a whole song.",
+   "evidence": "Shazam lists it in the seed's similar songs and the seed in its list (reciprocal).",
    "recordings": [
     {
-     "title": "One Bedroom Apartment",
-     "release": "2026-08-21 (single; also on the 'Moving Target' EP dated 2026-10-02 on Shazam)",
-     "spotify": "2vFWrRfOgKx4iwtkW126bd",
-     "apple": "6799278791",
-     "version": "Original studio",
-     "bpm": "96 (Shazam)",
-     "discovery": [
-      "Shazam similar songs (reciprocal)",
-      "Playlist co-occurrence: Upbeat Christian songs"
+     "title": "On My Knees (organ version)",
+     "artist": "Jonthekid.",
+     "release": "2026-07-02",
+     "genre": "Hip-Hop/Rap",
+     "album": "On My Knees (organ version) - Single",
+     "spotify": "0oS9viRJ2z7WtWB4xMosoi",
+     "apple": "6787226547",
+     "measured": true,
+     "score": 0.93,
+     "rank": 1,
+     "close": [
+      "brightness",
+      "bass weight",
+      "drum density",
+      "major/minor lean",
+      "tempo"
      ],
-     "similarity": "Faith-centred first-person narrative over indie-pop production; mid-tempo; Christian & Gospel tag on Capitol CMG.",
-     "difference": "Band arrangement and a COIN-style pop sheen versus the seed's duo minimalism.",
-     "audience": "Reciprocal Shazam similarity; one verified co-placement.",
-     "confidence": "High",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/2vFWrRfOgKx4iwtkW126bd",
-     "apple_url": "https://music.apple.com/us/song/6799278791"
-    },
-    {
-     "title": "Too Good",
-     "release": "2026-02-13",
-     "spotify": "0q73rWQ84M1CszFeWxCGIv",
-     "apple": "6815704599",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence: Christian Indie Hits (pitch suggestion list)"
-     ],
-     "similarity": "The band's breakout 2026 single ('sparked a cultural moment online' per Spotify bio) — the reference point for their current sound.",
-     "difference": "Bigger, rockier chorus than the seed.",
-     "audience": "Present in Near Kingdom's Christian Indie Hits alongside Hopeful., Living Again and Beach Chapel.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/0q73rWQ84M1CszFeWxCGIv",
-     "apple_url": "https://music.apple.com/us/song/6815704599"
+     "far": "dynamics",
+     "comp": {
+      "tone colour": 1.24,
+      "brightness": 0.47,
+      "bass weight": 0.57,
+      "drum density": 0.59,
+      "dynamics": 1.95,
+      "texture": 0.96,
+      "major/minor lean": 0.5,
+      "tempo": 0.76
+     },
+     "numbers": "136 BPM · brightness 1466 Hz (seed verse 1,813 / chorus 1,330) · bass share 8% (seed 4% / 16%) · drum share 0.34 (seed 0.28) · minor-leaning",
+     "why": "Matches on brightness, bass weight, drum density, major/minor lean, tempo. Furthest on dynamics.",
+     "bpm": 136,
+     "centroid": 1466,
+     "low": 0.077,
+     "perc": 0.34,
+     "maj": -0.16
     }
-   ]
+   ],
+   "lead": 0.93,
+   "rank": 1
   },
   {
-   "rank": 2,
-   "name": "Hopeful.",
-   "lane": "faith-indie",
-   "spotify_artist": "2bfNAeO9A7tThjqmYWGiVR",
-   "home": "Oceanside, CA · Hopeful./Near Kingdom/The Fuel Music",
-   "monthly": "185,321",
-   "identity": "Five-piece formed 2020 by Randy James and Hunter Jackson; K-LOVE (2026-07-27) files them under 'West Coast surf rock' / indie alt-rock. Debut LP 'The Art Of Letting Go' (12 songs) dated 2026-07-31.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Guitar-band surf rock vs the seed's minimalist pop; both mid-tempo, melody-first, bright-mixed per press. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     "Shared lead vocals (James/Jackson); not assessed by ear."
-    ],
-    "mood": [
-     "Medium",
-     "Optimistic framing ('hopelessness a kick to the teeth') versus the seed's night-time melancholy that resolves into light."
-    ],
-    "audience": [
-     "High",
-     "Co-placed with the seed in four sampled playlists and directly adjacent to it in two (Upbeat Christian songs #2–#10; that christian girl workout #67 and #71 around the seed at #68)."
-    ]
-   },
-   "evidence": "High",
-   "why": "Strongest verified audience adjacency of any act, same coastal scene; musical fit is plausible but attributed, not heard.",
-   "spotify_artist_url": "https://open.spotify.com/artist/2bfNAeO9A7tThjqmYWGiVR",
+   "name": "Dreamgirl",
+   "lane": "hazy-pop",
+   "sp_artist": "7JPPLV24jlpVoHz5dHN6pR",
+   "monthly": "728,831",
+   "home": "St. Joseph, MO / Kansas City",
+   "who": "Dream-pop band formed 2013 around singer Lacey Hopkins and multi-instrumentalist Skylar Smith; described as 80s synthpop, surf and dream-pop, compared to Tennis and TOPS. 'Teenage Blue' (2015) is their most-played track a decade on.",
+   "mood": "Teenage melancholy, secular; female lead.",
+   "evidence": "Chartmetric similar-artist table ranks Dreamgirl 82% similar to DWLLRS across moods, genres, audience and musicality.",
    "recordings": [
     {
-     "title": "Everything Is Better",
-     "release": "2025-07-18",
-     "spotify": "03tyAB7mjX4xMJeilL7brl",
-     "apple": "1880188777",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence ×4",
-      "K-LOVE radio-debut coverage"
+     "title": "Teenage Blue",
+     "artist": "Dreamgirl",
+     "release": "2015-02-14",
+     "genre": "Pop",
+     "album": "Illuminaughty - EP",
+     "spotify": "6oWXWkwHKREYlBNuBCitFP",
+     "apple": "1644213706",
+     "measured": true,
+     "score": 1.0,
+     "rank": 2,
+     "close": [
+      "bass weight",
+      "drum density",
+      "dynamics",
+      "tempo"
      ],
-     "similarity": "'A shot of optimistic surf rock' (K-LOVE) — breezy mid-tempo guitar pop with a faith message delivered plainly.",
-     "difference": "Buoyant from bar one; the seed starts numb and lifts later.",
-     "audience": "Four verified placements shared with the seed; 2M streams per Chartmetric playlist table.",
-     "confidence": "High",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/03tyAB7mjX4xMJeilL7brl",
-     "apple_url": "https://music.apple.com/us/song/1880188777"
-    },
-    {
-     "title": "Like I Am Yours",
-     "release": "2026-05-08",
-     "spotify": "4FjN4t4HvAx5qm7kCnzTb0",
-     "apple": "1893776443",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Adjacent to the seed in two playlists"
-     ],
-     "similarity": "Sits three slots from the seed in two independent playlists — the curators hear these together.",
-     "difference": "Not described in any source found; fit is inferred from placement only.",
-     "audience": "Adjacency ×2.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/4FjN4t4HvAx5qm7kCnzTb0",
-     "apple_url": "https://music.apple.com/us/song/1893776443"
+     "far": "tone colour",
+     "comp": {
+      "tone colour": 1.59,
+      "brightness": 0.85,
+      "bass weight": 0.54,
+      "drum density": 0.6,
+      "dynamics": 0.47,
+      "texture": 1.22,
+      "major/minor lean": 1.51,
+      "tempo": 0.65
+     },
+     "numbers": "92 BPM · brightness 1788 Hz (seed verse 1,813 / chorus 1,330) · bass share 7% (seed 4% / 16%) · drum share 0.27 (seed 0.28) · major-leaning",
+     "why": "Matches on bass weight, drum density, dynamics, tempo. Furthest on tone colour.",
+     "bpm": 92,
+     "centroid": 1788,
+     "low": 0.07,
+     "perc": 0.27,
+     "maj": 0.1
     }
-   ]
+   ],
+   "lead": 1.0,
+   "rank": 2
   },
   {
-   "rank": 3,
-   "name": "Living Again",
-   "lane": "faith-indie",
-   "spotify_artist": "4wQNGiwWYW2XFrSSPRdpI6",
-   "home": "Oceanside / north San Diego County · Near Kingdom Records",
-   "monthly": "62,394",
-   "identity": "Levi Sierra, Joseph Sivulka (lead vocals/piano), Savannah Hogan, Gabe Hernandez; began leading worship in parking lots during lockdown. Press comparison set: Citizens, Colony House, Switchfoot, The Killers, Gable Price and Friends.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Indie Christian rock; 'Cynical and Jaded' is described as their loudest release, so 'Dive Into' is the quieter entry point. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     "Piano-playing male lead; not assessed by ear."
-    ],
-    "mood": [
-     "High",
-     "'Cynical and Jaded' is explicitly for 'the spiritually tired and the still-reaching' — the seed's doubt-to-faith arc."
-    ],
-    "audience": [
-     "High",
-     "Co-placed in four sampled playlists; 'Dive Into' sits immediately before the seed in both Upbeat Christian songs (#7/#8) and Christian Pop Hits 2026 (#96/#97)."
-    ]
-   },
-   "evidence": "High",
-   "why": "The only act adjacent to the seed in two playlists with the same song; smallest audience in the top five, which makes it the most useful discovery.",
-   "spotify_artist_url": "https://open.spotify.com/artist/4wQNGiwWYW2XFrSSPRdpI6",
+   "name": "Levi Collins",
+   "lane": "soft-folk-pop",
+   "sp_artist": "2nV1jORHIOBQJdJzkNCyT7",
+   "monthly": "67,723",
+   "home": "independent; no bio published",
+   "who": "Small catalogue (five tracks), no Spotify bio, no press found. 'Ann Arbor' (2026-08-21, Alternative) is the most-played track; 'Radio Towers' (2026-04-20) is the other one the recommendation graph keeps pairing with the seed.",
+   "mood": "Not verified; place-name title suggests a leaving/longing song.",
+   "evidence": "Appears in the Shazam similar lists of both Jonthekid. and Arden Jones alongside the seed — the only unknown act cited twice.",
    "recordings": [
     {
-     "title": "Dive Into",
-     "release": "2025-12-05",
-     "spotify": "58m1IqFqQtcVi1Pw91MC65",
-     "apple": "1851517625",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Adjacent to the seed ×2",
-      "Playlist co-occurrence ×4"
+     "title": "Ann Arbor",
+     "artist": "Levi Collins",
+     "release": "2026-08-21",
+     "genre": "Alternative",
+     "album": "Ann Arbor - Single",
+     "spotify": "37ADnlXn4Z3CRNQ25kpsgS",
+     "apple": "6794747408",
+     "measured": true,
+     "score": 1.03,
+     "rank": 3,
+     "close": [
+      "bass weight",
+      "drum density",
+      "dynamics",
+      "major/minor lean",
+      "tempo"
      ],
-     "similarity": "The track two curators place right next to the seed; 722.8K streams (Chartmetric table).",
-     "difference": "Sound not described in sources beyond 'indie Christian rock'; fit rests on placement.",
-     "audience": "Adjacency in two playlists.",
-     "confidence": "High",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/58m1IqFqQtcVi1Pw91MC65",
-     "apple_url": "https://music.apple.com/us/song/1851517625"
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.52,
+      "brightness": 1.23,
+      "bass weight": 0.62,
+      "drum density": 0.32,
+      "dynamics": 0.62,
+      "texture": 1.98,
+      "major/minor lean": 0.44,
+      "tempo": 0.74
+     },
+     "numbers": "117 BPM · brightness 2018 Hz (seed verse 1,813 / chorus 1,330) · bass share 8% (seed 4% / 16%) · drum share 0.27 (seed 0.28) · minor-leaning",
+     "why": "Matches on bass weight, drum density, dynamics, major/minor lean, tempo. Furthest on texture.",
+     "bpm": 117,
+     "centroid": 2018,
+     "low": 0.076,
+     "perc": 0.27,
+     "maj": -0.14
     },
     {
-     "title": "Cynical and Jaded",
-     "release": "2026-06-19",
-     "spotify": "7JaJ2fuj8ThMybzb1JMvgW",
-     "apple": "6771585414",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence ×3",
-      "Press (94.7 The Word / GodTube)"
-     ],
-     "similarity": "Theme match: faith exhaustion and still reaching; indie rock.",
-     "difference": "'Loudest and most energetic release yet' — more drive than the seed.",
-     "audience": "Co-placed in three sampled playlists.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/7JaJ2fuj8ThMybzb1JMvgW",
-     "apple_url": "https://music.apple.com/us/song/6771585414"
+     "title": "Radio Towers",
+     "artist": "Levi Collins",
+     "release": "2026-04-20",
+     "genre": "",
+     "album": "",
+     "spotify": "2TGgl2rqArGVWT99eHMedu",
+     "apple": "",
+     "measured": false,
+     "score": null,
+     "rank": null,
+     "close": [],
+     "far": "",
+     "comp": {},
+     "numbers": "",
+     "why": "Not measured (no preview pulled); cited in Jonthekid.'s Shazam list.",
+     "bpm": null,
+     "centroid": null,
+     "low": null,
+     "perc": null,
+     "maj": null
     }
-   ]
+   ],
+   "lead": 1.03,
+   "rank": 3
   },
   {
-   "rank": 4,
+   "name": "Christian Leave",
+   "lane": "hazy-pop",
+   "sp_artist": "2G8UkPZnQ8i78L8TfqP1X6",
+   "monthly": "556,189",
+   "home": "Wichita Falls, TX (pastor's son, raised in church)",
+   "who": "Christian Akridge's 2016 viral acoustic-pop single; he has since moved to electric indie rock. Spotify bio: 'searching relationship songs anchored in melody, whether couched in arrangements of spare acoustic guitar or punchy indie rock'.",
+   "mood": "Young love and wanting to be seen; secular but church-raised.",
+   "evidence": "In Shazam's similar list for the seed.",
+   "recordings": [
+    {
+     "title": "Please Notice",
+     "artist": "Christian Leave",
+     "release": "2016-07-01",
+     "genre": "Pop",
+     "album": "Hope - EP",
+     "spotify": "56HKYaeYxT6eoKmB2JuM2N",
+     "apple": "1874409059",
+     "measured": true,
+     "score": 1.08,
+     "rank": 4,
+     "close": [
+      "bass weight",
+      "drum density",
+      "dynamics",
+      "tempo"
+     ],
+     "far": "tone colour",
+     "comp": {
+      "tone colour": 1.84,
+      "brightness": 0.82,
+      "bass weight": 0.67,
+      "drum density": 0.25,
+      "dynamics": 0.76,
+      "texture": 1.46,
+      "major/minor lean": 1.8,
+      "tempo": 0.48
+     },
+     "numbers": "112 BPM · brightness 1354 Hz (seed verse 1,813 / chorus 1,330) · bass share 5% (seed 4% / 16%) · drum share 0.28 (seed 0.28) · major-leaning",
+     "why": "Matches on bass weight, drum density, dynamics, tempo. Furthest on tone colour.",
+     "bpm": 112,
+     "centroid": 1354,
+     "low": 0.051,
+     "perc": 0.28,
+     "maj": 0.15
+    }
+   ],
+   "lead": 1.08,
+   "rank": 4
+  },
+  {
+   "name": "Bebe Stockwell",
+   "lane": "soft-folk-pop",
+   "sp_artist": "2KPSR6XA83w8XYrwWekhA9",
+   "monthly": "821,919",
+   "home": "Columbia Records",
+   "who": "Singer-songwriter whose 'Volume 1' (June 2026, Columbia) and 'Volume 2' (October) bracket this single; press calls her writing sharp and conversational. The newest recording in the shortlist (2026-10-09).",
+   "mood": "Working for something that is hard to get; secular.",
+   "evidence": "In Shazam's similar list for the seed.",
+   "recordings": [
+    {
+     "title": "Nothing Good is Easy",
+     "artist": "Bebe Stockwell",
+     "release": "2026-10-09",
+     "genre": "Folk",
+     "album": "Nothing Good is Easy - Single",
+     "spotify": "0Q5spcR38mMOuWUIEofauq",
+     "apple": "6819365577",
+     "measured": true,
+     "score": 1.08,
+     "rank": 5,
+     "close": [
+      "brightness",
+      "drum density",
+      "dynamics",
+      "tempo"
+     ],
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.61,
+      "brightness": 0.71,
+      "bass weight": 1.26,
+      "drum density": 0.63,
+      "dynamics": 0.45,
+      "texture": 2.12,
+      "major/minor lean": 1.64,
+      "tempo": 0.11
+     },
+     "numbers": "152 BPM · brightness 1532 Hz (seed verse 1,813 / chorus 1,330) · bass share 20% (seed 4% / 16%) · drum share 0.30 (seed 0.28) · major-leaning",
+     "why": "Matches on brightness, drum density, dynamics, tempo. Furthest on texture.",
+     "bpm": 152,
+     "centroid": 1532,
+     "low": 0.2,
+     "perc": 0.3,
+     "maj": 0.13
+    }
+   ],
+   "lead": 1.08,
+   "rank": 5
+  },
+  {
    "name": "HAPPY LANDING",
-   "lane": "indie-folk",
-   "spotify_artist": "2Jsv2nBcTfKpM9dbZcBbk6",
-   "home": "Oxford, MS",
+   "lane": "soft-folk-pop",
+   "sp_artist": "2Jsv2nBcTfKpM9dbZcBbk6",
    "monthly": "583,347",
-   "identity": "Five-piece (Matty Hendley lead vocals/guitar; Keegan Christensen vocals/keys; Jacob Christensen drums; Andrew Gardner fiddle/vocals; Wilson Moyer bass/vocals). Atwood Magazine (2026-03-27) on 'Big Sun': 'modern American folk rock, built on rich harmonies, surging arrangements'.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Folk-rock band with fiddle; 'Radiate' is 'a fiery, tightly wound anthem' with 'crossover-ready sheen' — higher energy than the seed. Not heard."
-    ],
-    "vocal": [
-     "Medium",
-     "Multi-voice harmonies from four singing members; the seed is a two-voice duo. Attributed, not heard."
-    ],
-    "mood": [
-     "Medium",
-     "Restlessness, leaving the past, 'turn toward the light' framing; not explicitly faith-based."
-    ],
-    "audience": [
-     "Medium",
-     "In Shazam's similar list for the seed and reciprocally cited from Arden Jones's 'deadlove' list; no verified playlist co-placement."
-    ]
-   },
-   "evidence": "Medium",
-   "why": "Best-documented secular sonic match: two independent algorithmic citations and a detailed press description of harmony-led, light-seeking folk rock.",
-   "spotify_artist_url": "https://open.spotify.com/artist/2Jsv2nBcTfKpM9dbZcBbk6",
+   "home": "Oxford, MS",
+   "who": "Five-piece folk-rock band with four singing members; Atwood Magazine on 'Big Sun' (2026): 'rich harmonies, surging arrangements'. 'Wanderer' is the quieter cut and measures closer than the anthem 'Radiate'.",
+   "mood": "Restlessness, leaving the past, turning toward light; not faith-explicit.",
+   "evidence": "'Radiate' is in Shazam's similar list for the seed and in Arden Jones's list.",
    "recordings": [
-    {
-     "title": "Radiate",
-     "release": "2026-03-06 (Big Sun)",
-     "spotify": "2PzLpBeOy2rySDKwCLvXAa",
-     "apple": "6771938504",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Shazam similar songs",
-      "Cited in Arden Jones 'deadlove' similar list"
-     ],
-     "similarity": "Light imagery, driving mid-tempo folk-rock, harmony stacks.",
-     "difference": "Fiddle and rock drive; brighter energy than the seed's slow-burn.",
-     "audience": "Two algorithmic citations.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/2PzLpBeOy2rySDKwCLvXAa",
-     "apple_url": "https://music.apple.com/us/song/6771938504"
-    },
     {
      "title": "Wanderer",
-     "release": "2026-03-06 (Big Sun)",
+     "artist": "HAPPY LANDING",
+     "release": "2026-03-06",
+     "genre": "Folk",
+     "album": "Big Sun",
      "spotify": "2eIE6EF7AEENMsemTNgAOt",
      "apple": "6771938517",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Artist's second most-played track; Atwood feature"
+     "measured": true,
+     "score": 1.1,
+     "rank": 6,
+     "close": [
+      "brightness",
+      "drum density",
+      "dynamics",
+      "tempo"
      ],
-     "similarity": "Storytelling driven by 'something bigger' than one relationship — the seed's night/restless perspective.",
-     "difference": "Nature imagery rather than faith language.",
-     "audience": "No seed-specific evidence; chosen as the album's quieter counterpart.",
-     "confidence": "Low",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/2eIE6EF7AEENMsemTNgAOt",
-     "apple_url": "https://music.apple.com/us/song/6771938517"
-    }
-   ]
-  },
-  {
-   "rank": 5,
-   "name": "Luke Rob",
-   "lane": "faith-indie",
-   "spotify_artist": "6xVnksnC8qln4WUd7Y3muQ",
-   "home": "Identity partly resolved (self-released via DistroKid; Viberate lists UK — unconfirmed)",
-   "monthly": "700,565",
-   "identity": "No Spotify bio. Shazam credits: writers Luke Rob and Mason Lancaster, producer/mixer Jacob Lincoln; genre tag Country. Catalogue titles ('Chapel Haze', 'Stained Glass Window', 'Waiting on Jesus') and the lyric description for 'Distance to Close' (long-distance longing with prayer) place him in the faith-tinged folk lane.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Acoustic-led, 109 BPM (close to the seed's 103); country/folk tagging suggests less pop sheen. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     "Not assessed by ear."
-    ],
-    "mood": [
-     "High",
-     "Longing for an absent person resolved through prayer — the seed's second-person ache plus faith turn."
-    ],
-    "audience": [
-     "Medium",
-     "In Shazam's similar list for the seed; reciprocally cited (with the seed) in Jonthekid.'s list; Sam Barber appears in his list. No playlist co-placement."
-    ]
-   },
-   "evidence": "Medium",
-   "why": "Closest tempo and lyrical register of the Shazam set; identity gaps keep evidence at Medium.",
-   "spotify_artist_url": "https://open.spotify.com/artist/6xVnksnC8qln4WUd7Y3muQ",
-   "recordings": [
-    {
-     "title": "Distance to Close",
-     "release": "2026-05-29",
-     "spotify": "64KQdbkSWBRTLtj2O3Geoj",
-     "apple": "6772673130",
-     "version": "Original studio",
-     "bpm": "109 (Shazam)",
-     "discovery": [
-      "Shazam similar songs (reciprocal via Jonthekid. list)"
-     ],
-     "similarity": "Second-person longing with a prayer for distance to close; mid-tempo acoustic.",
-     "difference": "Country/folk production; no pop master.",
-     "audience": "Algorithmic only.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/64KQdbkSWBRTLtj2O3Geoj",
-     "apple_url": "https://music.apple.com/us/song/6772673130"
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.45,
+      "brightness": 0.8,
+      "bass weight": 1.64,
+      "drum density": 0.63,
+      "dynamics": 0.55,
+      "texture": 2.15,
+      "major/minor lean": 1.05,
+      "tempo": 0.44
+     },
+     "numbers": "96 BPM · brightness 1305 Hz (seed verse 1,813 / chorus 1,330) · bass share 19% (seed 4% / 16%) · drum share 0.37 (seed 0.28) · major-leaning",
+     "why": "Matches on brightness, drum density, dynamics, tempo. Furthest on texture.",
+     "bpm": 96,
+     "centroid": 1305,
+     "low": 0.189,
+     "perc": 0.37,
+     "maj": 0.03
     },
     {
-     "title": "Chapel Haze",
-     "release": "2025-12-12",
-     "spotify": "6t61wbocMY94sCzOW2pbvr",
-     "apple": "1858842497",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Top of the artist's own Shazam similar list; third most-played track"
+     "title": "Radiate",
+     "artist": "HAPPY LANDING",
+     "release": "2026-03-06",
+     "genre": "Folk",
+     "album": "Big Sun",
+     "spotify": "2PzLpBeOy2rySDKwCLvXAa",
+     "apple": "6771938504",
+     "measured": true,
+     "score": 1.13,
+     "rank": 8,
+     "close": [
+      "bass weight",
+      "dynamics",
+      "major/minor lean"
      ],
-     "similarity": "Faith-tinged title and folk tag; the artist's own catalogue anchor.",
-     "difference": "Not described in any source.",
-     "audience": "None seed-specific.",
-     "confidence": "Low",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/6t61wbocMY94sCzOW2pbvr",
-     "apple_url": "https://music.apple.com/us/song/1858842497"
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.29,
+      "brightness": 1.02,
+      "bass weight": 0.79,
+      "drum density": 1.32,
+      "dynamics": 0.42,
+      "texture": 2.61,
+      "major/minor lean": 0.39,
+      "tempo": 0.86
+     },
+     "numbers": "89 BPM · brightness 1865 Hz (seed verse 1,813 / chorus 1,330) · bass share 12% (seed 4% / 16%) · drum share 0.55 (seed 0.28) · minor-leaning",
+     "why": "Matches on bass weight, dynamics, major/minor lean. Furthest on texture.",
+     "bpm": 89,
+     "centroid": 1865,
+     "low": 0.115,
+     "perc": 0.55,
+     "maj": -0.11
     }
-   ]
+   ],
+   "lead": 1.1,
+   "rank": 6
   },
   {
-   "rank": 6,
-   "name": "Beach Chapel",
-   "lane": "faith-indie",
-   "spotify_artist": "0xDQejb43c7yJ5nfCA7jv5",
-   "home": "Oceanside, CA · Near Kingdom Records",
-   "monthly": "178,194",
-   "identity": "Spotify About: 'rock fused with pop melodies and 80's synthesis', inspired by The Smiths, Vampire Weekend and Johnny Cash; lead singer/songwriter Adam Lamah 'finds that there is no line between spiritual and rock music'. Pier 'sessions' ministry (Liberty University coverage).",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Synth-tinged pop-rock; the 80s-synth element is the closest arrangement cue to the seed's pad-and-strum texture. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     ""
-    ],
-    "mood": [
-     "Medium",
-     "Spiritual lyrics described as 'deep, personal'; no track-level theme match found."
-    ],
-    "audience": [
-     "High",
-     "Co-placed with the seed in four sampled playlists (two songs each in Christian Pop Hits 2026 and Christian Indie Hits)."
-    ]
-   },
-   "evidence": "High",
-   "why": "Scene and placement evidence strong; sonic fit rests on the band's own description.",
-   "spotify_artist_url": "https://open.spotify.com/artist/0xDQejb43c7yJ5nfCA7jv5",
-   "recordings": [
-    {
-     "title": "Woke Up",
-     "release": "2026-07-03",
-     "spotify": "0AZCy3fFvxFh3RENipwxvK",
-     "apple": "6773904771",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence ×2 (Christian Pop Hits #5)"
-     ],
-     "similarity": "2026 single placed high on the same Near Kingdom list that carries the seed.",
-     "difference": "Not described in sources.",
-     "audience": "241.8K streams; two editorial adds per Chartmetric table.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/0AZCy3fFvxFh3RENipwxvK",
-     "apple_url": "https://music.apple.com/us/song/6773904771"
-    },
-    {
-     "title": "Cardiff",
-     "release": "2026-09-04",
-     "spotify": "0LS13MdvwBXyJh3YUPZid0",
-     "apple": "6800316485",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence ×2 (that christian girl workout #8; Christian Pop Hits #30)"
-     ],
-     "similarity": "Newest single; placed alongside the seed in the largest Christian playlist in the export.",
-     "difference": "Not described in sources.",
-     "audience": "Two co-placements.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/0LS13MdvwBXyJh3YUPZid0",
-     "apple_url": "https://music.apple.com/us/song/6800316485"
-    }
-   ]
-  },
-  {
-   "rank": 7,
    "name": "Sam Barber",
-   "lane": "indie-folk",
-   "spotify_artist": "08GfvCW09pv2QP4y9sle2a",
-   "home": "Missouri · Atlantic Records",
+   "lane": "soft-folk-pop",
+   "sp_artist": "08GfvCW09pv2QP4y9sle2a",
    "monthly": "9,111,248",
-   "identity": "'The More I Hope' is the focus track of second album 'Broken View' (2026-04-03, Atlantic), written and produced by Barber and Joe Becker (Presto/Americana Highways).",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Acoustic country-folk with a tightened, 'Celtic-inflected' phrasing per review; mid-tempo. Not heard."
-    ],
-    "vocal": [
-     "Low",
-     "Barber's rough-hewn baritone is far from the seed's soft duo tenor (attributed; not heard)."
-    ],
-    "mood": [
-     "High",
-     "Hope held against doubt."
-    ],
-    "audience": [
-     "High",
-     "In Shazam's seed list; cited in Luke Rob's and Jonthekid.'s lists; verified co-placement with the seed in MOODY INDIE (#48 vs seed #18)."
-    ]
-   },
-   "evidence": "High",
-   "why": "Three independent signals; ranked below the faith-indie cluster on vocal fit.",
-   "spotify_artist_url": "https://open.spotify.com/artist/08GfvCW09pv2QP4y9sle2a",
+   "home": "Missouri · Atlantic Records",
+   "who": "Focus track of second album 'Broken View' (2026-04-03); written and produced with Joe Becker. Review notes tightened phrasing and Celtic-inflected hints.",
+   "mood": "Hope held against doubt.",
+   "evidence": "Shazam similar list for the seed; verified co-placement on MOODY INDIE (#48 vs seed #18); cited in Luke Rob's and Jonthekid.'s lists.",
    "recordings": [
     {
      "title": "The More I Hope",
-     "release": "2026-04-03 (Broken View)",
+     "artist": "Sam Barber",
+     "release": "2026-04-03",
+     "genre": "Country",
+     "album": "Broken View",
      "spotify": "5jcS2jxv5IhNr6DenoBTi0",
      "apple": "1882826389",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Shazam similar songs",
-      "Playlist co-occurrence: MOODY INDIE"
+     "measured": true,
+     "score": 1.11,
+     "rank": 7,
+     "close": [
+      "brightness",
+      "dynamics"
      ],
-     "similarity": "Hope-against-doubt lyric; acoustic mid-tempo.",
-     "difference": "Country-folk voice and production.",
-     "audience": "Algorithmic ×3 plus one verified co-placement.",
-     "confidence": "High",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/5jcS2jxv5IhNr6DenoBTi0",
-     "apple_url": "https://music.apple.com/us/song/1882826389"
+     "far": "major/minor lean",
+     "comp": {
+      "tone colour": 1.36,
+      "brightness": 0.57,
+      "bass weight": 1.01,
+      "drum density": 0.89,
+      "dynamics": 0.42,
+      "texture": 1.86,
+      "major/minor lean": 2.6,
+      "tempo": 1.01
+     },
+     "numbers": "123 BPM · brightness 1499 Hz (seed verse 1,813 / chorus 1,330) · bass share 16% (seed 4% / 16%) · drum share 0.31 (seed 0.28) · major-leaning",
+     "why": "Matches on brightness, dynamics. Furthest on major/minor lean.",
+     "bpm": 123,
+     "centroid": 1499,
+     "low": 0.165,
+     "perc": 0.31,
+     "maj": 0.29
     }
-   ]
+   ],
+   "lead": 1.11,
+   "rank": 7
   },
   {
-   "rank": 8,
-   "name": "Josiah Queen",
-   "lane": "faith-indie",
-   "spotify_artist": "7yAymwuYh9RcpX84GSNIq2",
-   "home": "F&L Music Group",
-   "monthly": "5,123,579",
-   "identity": "Billboard Hot 100 entrant ('Dusty Bibles'); two #1 Top Christian Albums; headlined the 2026 tour Gable Price and Friends opened.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Acoustic-forward faith folk-pop with big-room production; 'demons' is the darker single. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     ""
-    ],
-    "mood": [
-     "High",
-     "'demons' names spiritual struggle directly; 'Garden in Manhattan' sits two slots after the seed in a fan playlist named after the seed's lyric."
-    ],
-    "audience": [
-     "High",
-     "Co-placed in four sampled playlists; adjacent to the seed in 'Jesus turn the lights back on' (M♡)."
-    ]
-   },
-   "evidence": "High",
-   "why": "The scale anchor of the faith lane; included for the two darker-toned songs, not the hits.",
-   "spotify_artist_url": "https://open.spotify.com/artist/7yAymwuYh9RcpX84GSNIq2",
+   "name": "Ike Dweck",
+   "lane": "soft-folk-pop",
+   "sp_artist": "6LNBNRvlMbL0Zv73aqQKSS",
+   "monthly": "1,999,912",
+   "home": "Brooklyn, NY",
+   "who": "No bio beyond the city. 'Safe With Me' (2024) measures closer to the seed than the bigger 2026 single 'Dawn', which is brighter.",
+   "mood": "Night-to-dawn, secular, intimate.",
+   "evidence": "Both tracks bracket the seed on MOODY INDIE (#15 and #20 around #18).",
    "recordings": [
     {
-     "title": "demons",
-     "release": "2026-01-16",
-     "spotify": "5HXFe0eb5lCfJpsqoqIbRS",
-     "apple": "1861978106",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence ×4 (Christian Pop Hits #8; Road Trip With Jesus #15)"
+     "title": "Safe With Me",
+     "artist": "Ike Dweck",
+     "release": "2024-07-18",
+     "genre": "Folk",
+     "album": "Safe With Me - Single",
+     "spotify": "0mLB2wh3dZfk0G627hk9A4",
+     "apple": "1752992971",
+     "measured": true,
+     "score": 1.16,
+     "rank": 9,
+     "close": [
+      "drum density",
+      "dynamics",
+      "tempo"
      ],
-     "similarity": "Night-side faith lyric; 53.2M streams per Chartmetric table.",
-     "difference": "Arena-scale production and a soloist's belt.",
-     "audience": "Four co-placements.",
-     "confidence": "High",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/5HXFe0eb5lCfJpsqoqIbRS",
-     "apple_url": "https://music.apple.com/us/song/1861978106"
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.58,
+      "brightness": 1.15,
+      "bass weight": 1.06,
+      "drum density": 0.62,
+      "dynamics": 0.39,
+      "texture": 2.42,
+      "major/minor lean": 1.55,
+      "tempo": 0.48
+     },
+     "numbers": "112 BPM · brightness 1997 Hz (seed verse 1,813 / chorus 1,330) · bass share 14% (seed 4% / 16%) · drum share 0.38 (seed 0.28) · major-leaning",
+     "why": "Matches on drum density, dynamics, tempo. Furthest on texture.",
+     "bpm": 112,
+     "centroid": 1997,
+     "low": 0.145,
+     "perc": 0.38,
+     "maj": 0.11
     },
     {
-     "title": "Garden in Manhattan",
-     "release": "not retrieved (track present in current playlist)",
-     "spotify": "5ZYVm3Db1MHga9vPSxmpmw",
-     "apple": "",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Adjacent to the seed in 'Jesus turn the lights back on' (#3 vs seed #1)"
+     "title": "Dawn",
+     "artist": "Ike Dweck",
+     "release": "2026-02-20",
+     "genre": "Folk",
+     "album": "Dawn - Single",
+     "spotify": "3vWCKiZLjjFd2ECYl8HVnc",
+     "apple": "1874303814",
+     "measured": true,
+     "score": 1.31,
+     "rank": 28,
+     "close": [
+      "bass weight",
+      "dynamics",
+      "tempo"
      ],
-     "similarity": "Chosen by a listener who built a playlist around the seed's lyric.",
-     "difference": "Not described in sources.",
-     "audience": "Adjacency in a 35-track fan playlist (191 followers in export).",
-     "confidence": "Low",
-     "access": "2026-10-20",
-     "verified": "Spotify track URI taken from the playlist embed; release date not verified",
-     "spotify_url": "https://open.spotify.com/track/5ZYVm3Db1MHga9vPSxmpmw",
-     "apple_url": ""
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.33,
+      "brightness": 2.32,
+      "bass weight": 0.68,
+      "drum density": 0.93,
+      "dynamics": 0.48,
+      "texture": 2.92,
+      "major/minor lean": 2.03,
+      "tempo": 0.23
+     },
+     "numbers": "99 BPM · brightness 2644 Hz (seed verse 1,813 / chorus 1,330) · bass share 10% (seed 4% / 16%) · drum share 0.44 (seed 0.28) · major-leaning",
+     "why": "Matches on bass weight, dynamics, tempo. Furthest on texture.",
+     "bpm": 99,
+     "centroid": 2644,
+     "low": 0.097,
+     "perc": 0.44,
+     "maj": 0.19
     }
-   ]
+   ],
+   "lead": 1.16,
+   "rank": 8
   },
   {
-   "rank": 9,
-   "name": "Strings & Heart",
-   "lane": "faith-indie",
-   "spotify_artist": "5lHDypXbNmHTDoFWpSTqXd",
-   "home": "Tucson, AZ · independent",
-   "monthly": "930,355",
-   "identity": "Three brothers (Angelo, Michael, Eric Espinosa); self-defined 'indie Christian', citing The Beatles, Nirvana, Switchfoot and The Beach Boys, 'a sound that spans surf rock to indie pop' (Spotify About). Broke out with 'flowers dressed in blue' (2023).",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Surf-rock-to-indie-pop palette described by the band; independent release. Not heard."
-    ],
-    "vocal": [
-     "Medium",
-     "Sibling harmony trio versus a two-voice duo (attributed)."
-    ],
-    "mood": [
-     "Medium",
-     "Faith-forward, generally brighter than the seed."
-    ],
-    "audience": [
-     "High",
-     "Co-placed in three sampled playlists; 'peach sand' is #1 and the seed #2 in Road Trip With Jesus; 'flowers dressed in blue' sits three slots before the seed in Christian Pop Hits 2026."
-    ]
-   },
-   "evidence": "High",
-   "why": "Adjacency in two playlists and a self-described palette close to DWLLRS's coastal pop.",
-   "spotify_artist_url": "https://open.spotify.com/artist/5lHDypXbNmHTDoFWpSTqXd",
+   "name": "Hans Williams",
+   "lane": "soft-folk-pop",
+   "sp_artist": "3SEkDN2vusR7CIyehzfJaj",
+   "monthly": "1,656,782",
+   "home": "Vermont → New Orleans, independent",
+   "who": "Indie-folk singer-songwriter with 'signature raspy vocals' (venue bios); 'Skin' (2024-01-24) has 50M+ streams. New album 'Songs for the Neighbors' due 2026-11-13.",
+   "mood": "Secular, confessional.",
+   "evidence": "Apple Music lists him among DWLLRS's similar artists.",
    "recordings": [
     {
-     "title": "peach sand",
-     "release": "2026-06-26",
-     "spotify": "0Kf0Y91hndxNaPfKDl9Rgq",
-     "apple": "6819361261",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Adjacent to the seed: Road Trip With Jesus (#1/#2)",
-      "Playlist co-occurrence ×3"
+     "title": "Skin",
+     "artist": "Hans Williams",
+     "release": "2024-01-24",
+     "genre": "Folk-Rock",
+     "album": "Skin - Single",
+     "spotify": "4uqfL7UKwWPF1bpZok6zGs",
+     "apple": "1722731736",
+     "measured": true,
+     "score": 1.16,
+     "rank": 10,
+     "close": [
+      "bass weight",
+      "major/minor lean",
+      "tempo"
      ],
-     "similarity": "Summer-coded independent indie-Christian single; 2.4M streams (Chartmetric table).",
-     "difference": "Not described beyond the band's palette.",
-     "audience": "Adjacency plus three co-placements.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/0Kf0Y91hndxNaPfKDl9Rgq",
-     "apple_url": "https://music.apple.com/us/song/6819361261"
-    },
-    {
-     "title": "flowers dressed in blue",
-     "release": "2023-07-13",
-     "spotify": "0JwrBnTPWocLijm932rPPH",
-     "apple": "",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Adjacent to the seed: Christian Pop Hits 2026 (#94 vs #97)"
-     ],
-     "similarity": "The breakout that 'went viral without paid promotion'; indie pop.",
-     "difference": "Older release.",
-     "audience": "Adjacency; 21.4M streams (Chartmetric table).",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Spotify URI from playlist embed; release date from Chartmetric playlist table",
-     "spotify_url": "https://open.spotify.com/track/0JwrBnTPWocLijm932rPPH",
-     "apple_url": ""
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.56,
+      "brightness": 1.24,
+      "bass weight": 0.57,
+      "drum density": 0.88,
+      "dynamics": 1.73,
+      "texture": 1.86,
+      "major/minor lean": 0.72,
+      "tempo": 0.0
+     },
+     "numbers": "103 BPM · brightness 1992 Hz (seed verse 1,813 / chorus 1,330) · bass share 8% (seed 4% / 16%) · drum share 0.44 (seed 0.28) · minor-leaning",
+     "why": "Matches on bass weight, major/minor lean, tempo. Furthest on texture.",
+     "bpm": 103,
+     "centroid": 1992,
+     "low": 0.081,
+     "perc": 0.44,
+     "maj": -0.03
     }
-   ]
+   ],
+   "lead": 1.16,
+   "rank": 9
   },
   {
-   "rank": 10,
+   "name": "Riverly",
+   "lane": "soft-folk-pop",
+   "sp_artist": "5J2T8tiDUEi9dsKoheu4OQ",
+   "monthly": "10,712",
+   "home": "independent",
+   "who": "Spotify About: 'intimate acoustic songs blended with modern pop production and anthemic choruses'. 'Fail and Fall' measures much closer than the curator's lead track 'Safe and Sound'.",
+   "mood": "Secular intimacy.",
+   "evidence": "Eight Riverly tracks surround the seed on MOODY INDIE.",
+   "recordings": [
+    {
+     "title": "Fail and Fall",
+     "artist": "Riverly",
+     "release": "2025-06-19",
+     "genre": "Singer/Songwriter",
+     "album": "Fail and Fall - Single",
+     "spotify": "5Qwoyl1zyb4Dfm6eZLTRIx",
+     "apple": "1819536572",
+     "measured": true,
+     "score": 1.17,
+     "rank": 11,
+     "close": [
+      "bass weight",
+      "dynamics",
+      "major/minor lean",
+      "tempo"
+     ],
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.51,
+      "brightness": 1.06,
+      "bass weight": 0.75,
+      "drum density": 1.29,
+      "dynamics": 0.56,
+      "texture": 2.11,
+      "major/minor lean": 0.73,
+      "tempo": 0.74
+     },
+     "numbers": "117 BPM · brightness 1902 Hz (seed verse 1,813 / chorus 1,330) · bass share 13% (seed 4% / 16%) · drum share 0.39 (seed 0.28) · minor-leaning",
+     "why": "Matches on bass weight, dynamics, major/minor lean, tempo. Furthest on texture.",
+     "bpm": 117,
+     "centroid": 1902,
+     "low": 0.126,
+     "perc": 0.39,
+     "maj": -0.03
+    },
+    {
+     "title": "Safe and Sound",
+     "artist": "Riverly",
+     "release": "2025-11-13",
+     "genre": "Pop",
+     "album": "Safe and Sound - Single",
+     "spotify": "1RwUPQJmgdmmHvMicl2hAJ",
+     "apple": "1850983130",
+     "measured": true,
+     "score": 1.43,
+     "rank": 44,
+     "close": [
+      "dynamics",
+      "tempo"
+     ],
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.55,
+      "brightness": 1.18,
+      "bass weight": 0.93,
+      "drum density": 2.01,
+      "dynamics": 0.53,
+      "texture": 2.5,
+      "major/minor lean": 2.25,
+      "tempo": 0.74
+     },
+     "numbers": "117 BPM · brightness 1974 Hz (seed verse 1,813 / chorus 1,330) · bass share 15% (seed 4% / 16%) · drum share 0.58 (seed 0.28) · major-leaning",
+     "why": "Matches on dynamics, tempo. Furthest on texture.",
+     "bpm": 117,
+     "centroid": 1974,
+     "low": 0.152,
+     "perc": 0.58,
+     "maj": 0.23
+    }
+   ],
+   "lead": 1.17,
+   "rank": 10
+  },
+  {
+   "name": "Bazzi",
+   "lane": "hazy-pop",
+   "sp_artist": "4GvEc3ANtPPjt1ZJllr5Zl",
+   "monthly": "14,013,341",
+   "home": "Canton, MI · mainstream",
+   "who": "R&B-influenced pop singer ('Mine', 'Beautiful'). 'Myself' is the COSMIC deep cut that measures closest; a mainstream reference, not a discovery.",
+   "mood": "Secular, self-reliant.",
+   "evidence": "Apple Music lists Bazzi among DWLLRS's similar artists.",
+   "recordings": [
+    {
+     "title": "Myself",
+     "artist": "Bazzi",
+     "release": "2018-04-12",
+     "genre": "Pop",
+     "album": "COSMIC",
+     "spotify": "5YLHLxoZsodDWjqSgjhBf3",
+     "apple": "1369438949",
+     "measured": true,
+     "score": 1.18,
+     "rank": 12,
+     "close": [
+      "bass weight",
+      "dynamics",
+      "major/minor lean",
+      "tempo"
+     ],
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.3,
+      "brightness": 1.49,
+      "bass weight": 0.68,
+      "drum density": 1.42,
+      "dynamics": 0.64,
+      "texture": 2.56,
+      "major/minor lean": 0.64,
+      "tempo": 0.23
+     },
+     "numbers": "99 BPM · brightness 2178 Hz (seed verse 1,813 / chorus 1,330) · bass share 10% (seed 4% / 16%) · drum share 0.55 (seed 0.28) · minor-leaning",
+     "why": "Matches on bass weight, dynamics, major/minor lean, tempo. Furthest on texture.",
+     "bpm": 99,
+     "centroid": 2178,
+     "low": 0.095,
+     "perc": 0.55,
+     "maj": -0.24
+    }
+   ],
+   "lead": 1.18,
+   "rank": 11
+  },
+  {
+   "name": "Hazlett",
+   "lane": "soft-folk-pop",
+   "sp_artist": "1zO3MgzmcwZLLNUQqeU2XH",
+   "monthly": "3,741,706",
+   "home": "Australia-born, Sweden-based",
+   "who": "Confessional folk-pop; Spotify bio is a hand-written note ('emotional, stubborn, simple, romantic'). 'My Skin' (2022) is the track programmed next to the seed.",
+   "mood": "Secular heartbreak.",
+   "evidence": "MOODY INDIE #13 (seed #18); two Hazlett songs top Chance Peña's Shazam list.",
+   "recordings": [
+    {
+     "title": "My Skin",
+     "artist": "Hazlett",
+     "release": "2022-07-01",
+     "genre": "Folk",
+     "album": "My Skin - Single",
+     "spotify": "0IzCG0Vozya6HAcDkKlBnQ",
+     "apple": "1626025824",
+     "measured": true,
+     "score": 1.18,
+     "rank": 13,
+     "close": [
+      "brightness",
+      "drum density",
+      "tempo"
+     ],
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.79,
+      "brightness": 0.79,
+      "bass weight": 1.48,
+      "drum density": 0.29,
+      "dynamics": 0.88,
+      "texture": 2.34,
+      "major/minor lean": 1.44,
+      "tempo": 0.24
+     },
+     "numbers": "161 BPM · brightness 1590 Hz (seed verse 1,813 / chorus 1,330) · bass share 17% (seed 4% / 16%) · drum share 0.28 (seed 0.28) · major-leaning",
+     "why": "Matches on brightness, drum density, tempo. Furthest on texture.",
+     "bpm": 161,
+     "centroid": 1590,
+     "low": 0.166,
+     "perc": 0.28,
+     "maj": 0.09
+    }
+   ],
+   "lead": 1.18,
+   "rank": 12
+  },
+  {
    "name": "Joseph O'Brien",
-   "lane": "faith-indie",
-   "spotify_artist": "1ibVSKkKjRcDYXTJrUprGa",
-   "home": "Franklin, TN · Gotee Records",
+   "lane": "faith-pop",
+   "sp_artist": "1ibVSKkKjRcDYXTJrUprGa",
    "monthly": "696,822",
-   "identity": "Spotify About: AGT season 13 quarter-finalist; inspirations Coldplay, Lauv, For King and Country, Owl City; signed to Gotee.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Polished pop (Lauv/Owl City lineage) rather than indie; mid-tempo. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     ""
-    ],
-    "mood": [
-     "Medium",
-     "'Looking Down' — faith pop; theme not verified."
-    ],
-    "audience": [
-     "High",
-     "Co-placed in four sampled playlists; 'Looking Down' is three slots after the seed in Upbeat Christian songs."
-    ]
-   },
-   "evidence": "High",
-   "why": "Strong placement evidence; the cleanest pop production of the faith lane, which may read as a difference rather than a match on listening.",
-   "spotify_artist_url": "https://open.spotify.com/artist/1ibVSKkKjRcDYXTJrUprGa",
+   "home": "Franklin, TN · Gotee Records",
+   "who": "AGT quarter-finalist; inspirations Coldplay, Lauv, Owl City. The cleanest pop production in the faith lane, which is why it measures closer than the guitar bands.",
+   "mood": "Faith pop; theme of 'Looking Down' not verified.",
+   "evidence": "Three slots after the seed on Upbeat Christian songs; co-placed in four sampled playlists.",
    "recordings": [
     {
      "title": "Looking Down",
+     "artist": "Joseph O'Brien",
      "release": "2026-05-08",
+     "genre": "Christian",
+     "album": "Looking Down - Single",
      "spotify": "7klzGbf2WFUbgbPqBrLk0G",
      "apple": "1892521658",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Adjacent to the seed: Upbeat Christian songs (#11 vs #8)",
-      "Playlist co-occurrence ×4"
+     "measured": true,
+     "score": 1.18,
+     "rank": 14,
+     "close": [
+      "drum density",
+      "tempo"
      ],
-     "similarity": "Pop-leaning faith single placed near the seed.",
-     "difference": "Major-label pop polish.",
-     "audience": "Adjacency plus four co-placements.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/7klzGbf2WFUbgbPqBrLk0G",
-     "apple_url": "https://music.apple.com/us/song/1892521658"
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.32,
+      "brightness": 0.93,
+      "bass weight": 0.88,
+      "drum density": 0.55,
+      "dynamics": 1.91,
+      "texture": 2.31,
+      "major/minor lean": 1.49,
+      "tempo": 0.65
+     },
+     "numbers": "92 BPM · brightness 1793 Hz (seed verse 1,813 / chorus 1,330) · bass share 15% (seed 4% / 16%) · drum share 0.35 (seed 0.28) · major-leaning",
+     "why": "Matches on drum density, tempo. Furthest on texture.",
+     "bpm": 92,
+     "centroid": 1793,
+     "low": 0.154,
+     "perc": 0.35,
+     "maj": 0.1
     }
-   ]
+   ],
+   "lead": 1.18,
+   "rank": 13
   },
   {
-   "rank": 11,
+   "name": "Strings & Heart",
+   "lane": "faith-pop",
+   "sp_artist": "5lHDypXbNmHTDoFWpSTqXd",
+   "monthly": "930,355",
+   "home": "Tucson, AZ · independent",
+   "who": "Three brothers; self-defined 'indie Christian', 'surf rock to indie pop'. 'peach sand' is brighter and faster than the seed but keeps the bass back and the drums soft.",
+   "mood": "Faith-forward, summery.",
+   "evidence": "#1 beside the seed at #2 on Road Trip With Jesus; co-placed in three sampled playlists.",
+   "recordings": [
+    {
+     "title": "peach sand",
+     "artist": "Strings & Heart",
+     "release": "2026-06-26",
+     "genre": "Christian Rock",
+     "album": "before the world began - Single",
+     "spotify": "0Kf0Y91hndxNaPfKDl9Rgq",
+     "apple": "6819361261",
+     "measured": true,
+     "score": 1.19,
+     "rank": 15,
+     "close": [
+      "bass weight",
+      "major/minor lean",
+      "tempo"
+     ],
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.55,
+      "brightness": 1.61,
+      "bass weight": 0.53,
+      "drum density": 0.84,
+      "dynamics": 0.86,
+      "texture": 2.64,
+      "major/minor lean": 0.43,
+      "tempo": 0.24
+     },
+     "numbers": "161 BPM · brightness 2325 Hz (seed verse 1,813 / chorus 1,330) · bass share 6% (seed 4% / 16%) · drum share 0.44 (seed 0.28) · minor-leaning",
+     "why": "Matches on bass weight, major/minor lean, tempo. Furthest on texture.",
+     "bpm": 161,
+     "centroid": 2325,
+     "low": 0.064,
+     "perc": 0.44,
+     "maj": -0.08
+    }
+   ],
+   "lead": 1.19,
+   "rank": 14
+  },
+  {
+   "name": "Luke Rob",
+   "lane": "faith-pop",
+   "sp_artist": "6xVnksnC8qln4WUd7Y3muQ",
+   "monthly": "700,565",
+   "home": "independent (identity partly resolved)",
+   "who": "No bio; Shazam credits Luke Rob and Mason Lancaster, producer Jacob Lincoln; Country tag. Lyric page: long-distance longing with a prayer for the distance to close.",
+   "mood": "Second-person ache resolved through prayer — the seed's pre-chorus and bridge.",
+   "evidence": "In Shazam's similar list for the seed; reciprocal via Jonthekid.'s list.",
+   "recordings": [
+    {
+     "title": "Distance to Close",
+     "artist": "Luke Rob",
+     "release": "2026-05-29",
+     "genre": "Country",
+     "album": "Distance to Close - Single",
+     "spotify": "64KQdbkSWBRTLtj2O3Geoj",
+     "apple": "6772673130",
+     "measured": true,
+     "score": 1.19,
+     "rank": 16,
+     "close": [
+      "bass weight",
+      "dynamics",
+      "tempo"
+     ],
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.38,
+      "brightness": 1.13,
+      "bass weight": 0.71,
+      "drum density": 1.29,
+      "dynamics": 0.59,
+      "texture": 2.43,
+      "major/minor lean": 2.18,
+      "tempo": 0.24
+     },
+     "numbers": "108 BPM · brightness 1970 Hz (seed verse 1,813 / chorus 1,330) · bass share 12% (seed 4% / 16%) · drum share 0.42 (seed 0.28) · major-leaning",
+     "why": "Matches on bass weight, dynamics, tempo. Furthest on texture.",
+     "bpm": 108,
+     "centroid": 1970,
+     "low": 0.118,
+     "perc": 0.42,
+     "maj": 0.22
+    },
+    {
+     "title": "Chapel Haze",
+     "artist": "Luke Rob",
+     "release": "2025-12-12",
+     "genre": "Folk",
+     "album": "Chapel Haze - Single",
+     "spotify": "6t61wbocMY94sCzOW2pbvr",
+     "apple": "1858842497",
+     "measured": true,
+     "score": 1.32,
+     "rank": 29,
+     "close": [
+      "bass weight",
+      "dynamics",
+      "tempo"
+     ],
+     "far": "texture",
+     "comp": {
+      "tone colour": 1.44,
+      "brightness": 1.44,
+      "bass weight": 0.71,
+      "drum density": 1.97,
+      "dynamics": 0.43,
+      "texture": 2.39,
+      "major/minor lean": 1.9,
+      "tempo": 0.23
+     },
+     "numbers": "99 BPM · brightness 2141 Hz (seed verse 1,813 / chorus 1,330) · bass share 11% (seed 4% / 16%) · drum share 0.53 (seed 0.28) · major-leaning",
+     "why": "Matches on bass weight, dynamics, tempo. Furthest on texture.",
+     "bpm": 99,
+     "centroid": 2141,
+     "low": 0.106,
+     "perc": 0.53,
+     "maj": 0.17
+    }
+   ],
+   "lead": 1.19,
+   "rank": 15
+  }
+ ],
+ "next_five": [
+  {
+   "name": "Hunter Metts",
+   "k": "Hunter Metts || Weathervane",
+   "sp": "0vxNNwfm6zj8ISkCi6INFR",
+   "sp_artist": "1nQp0Yk9yxk2PJsXOtMR14",
+   "why": "Nashville indie folk; 'Weathervane' (2024) is a reflective ballad that broke on TikTok. Cited in Noah Kahan's and Neon Dreams's Shazam lists.",
+   "title": "Weathervane",
+   "release": "2024-11-15",
+   "apple": "1774832755",
+   "score": 1.2,
+   "rank": 17,
+   "close": [
+    "brightness",
+    "tempo"
+   ],
+   "far": "texture",
+   "numbers": "144 BPM · brightness 1428 Hz (seed verse 1,813 / chorus 1,330) · bass share 16% (seed 4% / 16%) · drum share 0.44 (seed 0.28) · major-leaning",
+   "why_m": "Matches on brightness, tempo. Furthest on texture.",
+   "bpm": 144,
+   "centroid": 1428,
+   "low": 0.155,
+   "perc": 0.44,
+   "maj": 0.16
+  },
+  {
+   "name": "Mr Twin Sister",
+   "k": "Mr Twin Sister || Blush",
+   "sp": "0V8pBleK96KuJ7zJGxK9u8",
+   "sp_artist": "5ltJZgIW3OkY5WvuzX5MYz",
+   "why": "Chartmetric's #1 similar artist (85%); 'low lit disco and funk' from the 2014 self-titled album. Older, cooler, more rhythmic.",
+   "title": "Blush",
+   "release": "2014-08-02",
+   "apple": "905957640",
+   "score": 1.21,
+   "rank": 18,
+   "close": [
+    "drum density",
+    "major/minor lean",
+    "tempo"
+   ],
+   "far": "texture",
+   "numbers": "144 BPM · brightness 1735 Hz (seed verse 1,813 / chorus 1,330) · bass share 20% (seed 4% / 16%) · drum share 0.32 (seed 0.28) · minor-leaning",
+   "why_m": "Matches on drum density, major/minor lean, tempo. Furthest on texture.",
+   "bpm": 144,
+   "centroid": 1735,
+   "low": 0.198,
+   "perc": 0.32,
+   "maj": -0.12
+  },
+  {
+   "name": "Michael Marcagi",
+   "k": "Michael Marcagi || Scared To Start",
+   "sp": "3Pbp7cUCx4d3OAkZSCoNvn",
+   "sp_artist": "4j96cMcT8GRi11qbvo1cLQ",
+   "why": "Warner folk-rock hit (2024); 'bright guitar echoes through a steady tambourine-driven beat'. Appears in Gable Price and Friends' and Noah Kahan's Shazam lists.",
+   "title": "Scared To Start",
+   "release": "2024-01-12",
+   "apple": "1724272788",
+   "score": 1.21,
+   "rank": 19,
+   "close": [
+    "brightness",
+    "bass weight",
+    "tempo"
+   ],
+   "far": "major/minor lean",
+   "numbers": "152 BPM · brightness 1729 Hz (seed verse 1,813 / chorus 1,330) · bass share 14% (seed 4% / 16%) · drum share 0.47 (seed 0.28) · major-leaning",
+   "why_m": "Matches on brightness, bass weight, tempo. Furthest on major/minor lean.",
+   "bpm": 152,
+   "centroid": 1729,
+   "low": 0.136,
+   "perc": 0.47,
+   "maj": 0.37
+  },
+  {
+   "name": "SYML",
+   "k": "SYML || The White Light of the Morning",
+   "sp": "3Nwy93NLDeqRc0Fr1qLnJR",
+   "sp_artist": "6AyATGg7mDgBlZ4N5uNog0",
+   "why": "Three SYML tracks on MOODY INDIE. Measured on the Paris Unplugged live version (the only preview matched); the studio link is given.",
+   "title": "The White Light of the Morning (Paris Unplugged Live)",
+   "release": "2025-09-26",
+   "apple": "1834000964",
+   "score": 1.22,
+   "rank": 20,
+   "close": [
+    "bass weight",
+    "drum density",
+    "major/minor lean"
+   ],
+   "far": "dynamics",
+   "numbers": "123 BPM · brightness 1072 Hz (seed verse 1,813 / chorus 1,330) · bass share 6% (seed 4% / 16%) · drum share 0.18 (seed 0.28) · minor-leaning",
+   "why_m": "Matches on bass weight, drum density, major/minor lean. Furthest on dynamics.",
+   "bpm": 123,
+   "centroid": 1072,
+   "low": 0.064,
+   "perc": 0.18,
+   "maj": -0.08
+  },
+  {
+   "name": "Josiah Queen",
+   "k": "Josiah Queen || demons",
+   "sp": "5HXFe0eb5lCfJpsqoqIbRS",
+   "sp_artist": "7yAymwuYh9RcpX84GSNIq2",
+   "why": "The faith lane's scale anchor; 'demons' measures closer than anything by the guitar bands and keeps the night-side lyric.",
+   "title": "demons",
+   "release": "2026-01-16",
+   "apple": "1861978106",
+   "score": 1.25,
+   "rank": 24,
+   "close": [
+    "bass weight",
+    "dynamics"
+   ],
+   "far": "texture",
+   "numbers": "129 BPM · brightness 2342 Hz (seed verse 1,813 / chorus 1,330) · bass share 11% (seed 4% / 16%) · drum share 0.45 (seed 0.28) · major-leaning",
+   "why_m": "Matches on bass weight, dynamics. Furthest on texture.",
+   "bpm": 129,
+   "centroid": 2342,
+   "low": 0.107,
+   "perc": 0.45,
+   "maj": 0.02
+  }
+ ],
+ "moved_from_rev1": [
+  {
+   "name": "Gable Price and Friends",
+   "title": "One Bedroom Apartment",
+   "score": 1.43,
+   "rank": 46,
+   "reason": "Heavier low end (23% vs 4% in the verse), louder dynamics swing; a band record with a COIN sheen. Keeps reciprocal Shazam similarity and the best lyric fit in the pool.",
+   "apple": "6799278791"
+  },
+  {
+   "name": "Hopeful.",
+   "title": "Everything Is Better",
+   "score": 1.61,
+   "rank": 66,
+   "reason": "Bright surf-rock guitars (centroid 2.8 kHz vs 1.8) and the most drum-forward clip of the faith set (percussive share 0.69). Audience adjacency is real; the sound is not.",
+   "apple": "1880188777"
+  },
+  {
+   "name": "Living Again",
+   "title": "Dive Into",
+   "score": 1.49,
+   "rank": 54,
+   "reason": "Indie-rock drive, busier onsets, major-leaning. Adjacent to the seed in two playlists, far from it in sound.",
+   "apple": "1851517625"
+  },
+  {
+   "name": "Beach Chapel",
+   "title": "Woke Up",
+   "score": 1.43,
+   "rank": 45,
+   "reason": "80s-synth pop-rock reads brighter and wider-dynamic than the seed; bass-light like the seed's verse but never settles.",
+   "apple": "6773904771"
+  },
+  {
    "name": "Bennett Coast",
-   "lane": "alt-pop",
-   "spotify_artist": "5JKePhHHAtaMvBoWuULgm6",
-   "home": "United States · mid-level (Chartmetric)",
-   "monthly": "683,523",
-   "identity": "Chartmetric's similar-artist table ranks him 80% similar to DWLLRS across Moods, Genres, Audience and Musicality; Apple Music lists him among DWLLRS's similar artists.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Chill indie/alt-pop; Chartmetric flags musicality similarity. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     ""
-    ],
-    "mood": [
-     "Medium",
-     "Secular; 'Pretender' is a 2024 single with no documented theme match."
-    ],
-    "audience": [
-     "High",
-     "Three independent audience signals: Chartmetric similar artist, Apple Music similar artist, verified co-placement in SAD VIBES / ALTERNATIVE (#38 vs seed #31)."
-    ]
-   },
-   "evidence": "High",
-   "why": "Best-evidenced secular alt-pop neighbour; the track pick is the one actually co-placed, not the most-played.",
-   "spotify_artist_url": "https://open.spotify.com/artist/5JKePhHHAtaMvBoWuULgm6",
-   "recordings": [
-    {
-     "title": "Pretender",
-     "release": "2024-03-08",
-     "spotify": "2qIc2lDtHJte4EpEx7nKXn",
-     "apple": "1732356508",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence: SAD VIBES / ALTERNATIVE",
-      "Chartmetric + Apple similar artist"
-     ],
-     "similarity": "Co-placed alt-pop track from an artist two systems call similar.",
-     "difference": "No faith content; secular alt-pop.",
-     "audience": "Three signals.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/2qIc2lDtHJte4EpEx7nKXn",
-     "apple_url": "https://music.apple.com/us/song/1732356508"
-    }
-   ]
+   "title": "Pretender",
+   "score": 1.27,
+   "rank": 25,
+   "reason": "Major-leaning and brighter; Chartmetric's musicality call did not survive the preview comparison.",
+   "apple": "1732356508"
   },
   {
-   "rank": 12,
-   "name": "Riverly",
-   "lane": "indie-folk",
-   "spotify_artist": "5J2T8tiDUEi9dsKoheu4OQ",
-   "home": "independent",
-   "monthly": "10,712",
-   "identity": "Spotify About: 'intimate acoustic songs blended with modern pop production and anthemic choruses' — a one-line description of the seed's own arc. Eight Riverly tracks surround the seed in MOODY INDIE (curator Landlake music).",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Self-described acoustic-into-pop build matches the seed's bass-light verse / full chorus shape. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     ""
-    ],
-    "mood": [
-     "Medium",
-     "Secular intimacy; no faith layer."
-    ],
-    "audience": [
-     "Medium",
-     "Verified co-placement in one playlist (MOODY INDIE: #1, #7, #10, #14, #19, #24, #25, #35; seed #18); tiny audience."
-    ]
-   },
-   "evidence": "Medium",
-   "why": "Smallest act in the shortlist; included because a curator who programmed the seed built the list around this sound.",
-   "spotify_artist_url": "https://open.spotify.com/artist/5J2T8tiDUEi9dsKoheu4OQ",
-   "recordings": [
-    {
-     "title": "Safe and Sound",
-     "release": "2025-11-13",
-     "spotify": "1RwUPQJmgdmmHvMicl2hAJ",
-     "apple": "1850983130",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence: MOODY INDIE (#1)"
-     ],
-     "similarity": "Curator-lead track on the seed's tightest secular playlist.",
-     "difference": "Solo singer-songwriter.",
-     "audience": "One playlist.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/1RwUPQJmgdmmHvMicl2hAJ",
-     "apple_url": "https://music.apple.com/us/song/1850983130"
-    },
-    {
-     "title": "Fail and Fall",
-     "release": "not retrieved",
-     "spotify": "5Qwoyl1zyb4Dfm6eZLTRIx",
-     "apple": "",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence: MOODY INDIE (#10)"
-     ],
-     "similarity": "Second Riverly track on the same list.",
-     "difference": "—",
-     "audience": "One playlist.",
-     "confidence": "Low",
-     "access": "2026-10-20",
-     "verified": "Spotify URI from playlist embed; release date not verified",
-     "spotify_url": "https://open.spotify.com/track/5Qwoyl1zyb4Dfm6eZLTRIx",
-     "apple_url": ""
-    }
-   ]
-  },
-  {
-   "rank": 13,
    "name": "Chance Peña",
-   "lane": "indie-folk",
-   "spotify_artist": "4lhUHpVOXmkEBGGHV71QCh",
-   "home": "East Texas · self-produced",
-   "monthly": "7,383,544",
-   "identity": "Songwriter-producer (Grammy-nominated co-write on John Legend's 'Conversations in the Dark'); Shazam tags 'i am not who i was' Folk-Rock at 130 BPM.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Acoustic folk-rock with modern production; 130 BPM is brisker than the seed. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     ""
-    ],
-    "mood": [
-     "High",
-     "A touring musician afraid his changes will cost him love — the seed's 'friends moving on / afraid of time' verse in secular form."
-    ],
-    "audience": [
-     "Medium",
-     "Verified co-placement in MOODY INDIE (#8 and #12 around the seed at #18); Michael Marcagi & Chance Peña appear in Gable Price and Friends' Shazam list."
-    ]
-   },
-   "evidence": "Medium",
-   "why": "Lyrical-register match with playlist support; tempo is the main gap.",
-   "spotify_artist_url": "https://open.spotify.com/artist/4lhUHpVOXmkEBGGHV71QCh",
-   "recordings": [
-    {
-     "title": "i am not who i was",
-     "release": "2023-09-21 single (2024 album 'Ever-Shifting, Continual Blossoming')",
-     "spotify": "",
-     "apple": "1705982596",
-     "version": "Original studio",
-     "bpm": "130 (Shazam)",
-     "discovery": [
-      "Playlist co-occurrence: MOODY INDIE (#12)"
-     ],
-     "similarity": "Change, absence and fear of losing someone; acoustic-led.",
-     "difference": "Faster; secular.",
-     "audience": "One playlist; adjacent block.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Apple ID via iTunes Search; Spotify URI not retrieved in this session",
-     "spotify_url": "",
-     "apple_url": "https://music.apple.com/us/song/1705982596"
-    },
-    {
-     "title": "How Long, How Low? (with Hayd)",
-     "release": "not retrieved",
-     "spotify": "7IGOMg3KwOqHAvvUAPXE7B",
-     "apple": "",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Playlist co-occurrence: MOODY INDIE (#8)"
-     ],
-     "similarity": "Second Peña track on the same list.",
-     "difference": "Duet.",
-     "audience": "One playlist.",
-     "confidence": "Low",
-     "access": "2026-10-20",
-     "verified": "Spotify URI from playlist embed; release date not verified",
-     "spotify_url": "https://open.spotify.com/track/7IGOMg3KwOqHAvvUAPXE7B",
-     "apple_url": ""
-    }
-   ]
+   "title": "i am not who i was",
+   "score": 1.53,
+   "rank": 59,
+   "reason": "Lyrically the closest secular match, but the recording is bass-heavy (32% low share) and folk-rock brisk.",
+   "apple": "1705982596"
   },
   {
-   "rank": 14,
-   "name": "Ike Dweck",
-   "lane": "indie-folk",
-   "spotify_artist": "6LNBNRvlMbL0Zv73aqQKSS",
-   "home": "Brooklyn, NY",
-   "monthly": "1,999,912",
-   "identity": "No bio beyond location; 'Dawn' (2026-02-20, Folk tag) is his most-played track. Cited in Ashley Singh's Shazam similar list ('The End of Me').",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Folk-tagged, moody; placement suggests the same late-night register. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     ""
-    ],
-    "mood": [
-     "Medium",
-     "Night-to-dawn imagery by title; theme not verified."
-    ],
-    "audience": [
-     "Medium",
-     "Verified co-placement in MOODY INDIE: 'Dawn' #15 and 'Safe With Me' #20 bracket the seed at #18."
-    ]
-   },
-   "evidence": "Medium",
-   "why": "The seed's nearest neighbours on its tightest secular list.",
-   "spotify_artist_url": "https://open.spotify.com/artist/6LNBNRvlMbL0Zv73aqQKSS",
-   "recordings": [
-    {
-     "title": "Dawn",
-     "release": "2026-02-20",
-     "spotify": "3vWCKiZLjjFd2ECYl8HVnc",
-     "apple": "1874303814",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Adjacent to the seed: MOODY INDIE (#15 vs #18)"
-     ],
-     "similarity": "Mid-tempo moody folk-pop placed three slots before the seed.",
-     "difference": "Secular; solo.",
-     "audience": "Adjacency.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/3vWCKiZLjjFd2ECYl8HVnc",
-     "apple_url": "https://music.apple.com/us/song/1874303814"
-    },
-    {
-     "title": "Safe With Me",
-     "release": "not retrieved",
-     "spotify": "0mLB2wh3dZfk0G627hk9A4",
-     "apple": "",
-     "version": "Original studio",
-     "bpm": "not retrieved",
-     "discovery": [
-      "Adjacent to the seed: MOODY INDIE (#20 vs #18)"
-     ],
-     "similarity": "Two slots after the seed.",
-     "difference": "—",
-     "audience": "Adjacency.",
-     "confidence": "Low",
-     "access": "2026-10-20",
-     "verified": "Spotify URI from playlist embed; release date not verified",
-     "spotify_url": "https://open.spotify.com/track/0mLB2wh3dZfk0G627hk9A4",
-     "apple_url": ""
-    }
-   ]
-  },
-  {
-   "rank": 15,
    "name": "Arden Jones",
-   "lane": "alt-pop",
-   "spotify_artist": "3mMogqf2JyBUQZxFZlC79w",
-   "home": "nbd",
-   "monthly": "3,606,842",
-   "identity": "Apple Music lists Arden Jones among DWLLRS's similar artists; 'deadlove' (94 BPM, Pop) is in Shazam's similar list for the seed and its own list cites HAPPY LANDING 'Radiate'.",
-   "dims": {
-    "sonic": [
-     "Medium",
-     "Mid-tempo alt-pop, 94 BPM; closest production family to DWLLRS's Island-era singles. Not heard."
-    ],
-    "vocal": [
-     "Unassessed",
-     ""
-    ],
-    "mood": [
-     "Medium",
-     "Reckless nights with a loyal undercurrent — night-time, no faith."
-    ],
-    "audience": [
-     "Medium",
-     "Apple similar artist plus Shazam similar song; no playlist co-placement."
-    ]
-   },
-   "evidence": "Medium",
-   "why": "Closes the loop to the secular pop audience DWLLRS built before 2026.",
-   "spotify_artist_url": "https://open.spotify.com/artist/3mMogqf2JyBUQZxFZlC79w",
-   "recordings": [
-    {
-     "title": "deadlove",
-     "release": "2026-02-26 (Apple single) / 2026-08-28 ('FLASH', Shazam)",
-     "spotify": "1MXrvYih9N3QEuEPMcsyhX",
-     "apple": "6793820664",
-     "version": "Original studio",
-     "bpm": "94 (Shazam)",
-     "discovery": [
-      "Shazam similar songs",
-      "Apple Music similar artist"
-     ],
-     "similarity": "Night-time alt-pop at a neighbouring tempo.",
-     "difference": "Secular; brighter pop vocal production (attributed).",
-     "audience": "Two algorithmic signals.",
-     "confidence": "Medium",
-     "access": "2026-10-20",
-     "verified": "Identity and release date verified on Spotify embed data and the iTunes Search API",
-     "spotify_url": "https://open.spotify.com/track/1MXrvYih9N3QEuEPMcsyhX",
-     "apple_url": "https://music.apple.com/us/song/6793820664"
-    }
-   ]
+   "title": "deadlove",
+   "score": 1.55,
+   "rank": 60,
+   "reason": "Brighter, busier alt-pop; the Apple/Shazam links point to audience, not texture.",
+   "apple": "6793820664"
+  },
+  {
+   "name": "Forrest Frank",
+   "title": "OKAY!",
+   "score": 2.02,
+   "rank": 71,
+   "reason": "Measures furthest of all: bright, drum-forward R&B-pop. Keep as the audience anchor of the Christian playlists, nothing more.",
+   "apple": "6765792669"
   }
  ],
  "listening_sequence": [
@@ -1350,119 +4524,119 @@
    "title": "one of those nights",
    "spotify_url": "https://open.spotify.com/track/7sKyh99y8yi1qHklmOAtWH",
    "apple_url": "https://music.apple.com/us/song/6768459375",
-   "why": "Seed. 103 BPM, loud pop master, bass-light verses into a full chorus, night → light."
+   "why": "Seed."
   },
   {
    "order": 2,
-   "artist": "Gable Price and Friends",
-   "title": "One Bedroom Apartment",
-   "spotify_url": "https://open.spotify.com/track/2vFWrRfOgKx4iwtkW126bd",
-   "apple_url": "https://music.apple.com/us/song/6799278791",
-   "why": "Closest documented match: reciprocal Shazam similarity, 96 BPM, faith in ordinary life."
+   "artist": "Jonthekid.",
+   "title": "On My Knees (organ version)",
+   "spotify_url": "https://open.spotify.com/track/0oS9viRJ2z7WtWB4xMosoi",
+   "apple_url": "https://music.apple.com/us/song/6787226547",
+   "why": "Closest measured clip; prayerful, organ-bed, drums held back."
   },
   {
    "order": 3,
-   "artist": "Living Again",
-   "title": "Dive Into",
-   "spotify_url": "https://open.spotify.com/track/58m1IqFqQtcVi1Pw91MC65",
-   "apple_url": "https://music.apple.com/us/song/1851517625",
-   "why": "Two curators sequence this directly before the seed."
+   "artist": "Dreamgirl",
+   "title": "Teenage Blue",
+   "spotify_url": "https://open.spotify.com/track/6oWXWkwHKREYlBNuBCitFP",
+   "apple_url": "https://music.apple.com/us/song/1644213706",
+   "why": "Dream-pop haze at 92 BPM; same bass-light, low-transient shape."
   },
   {
    "order": 4,
-   "artist": "Hopeful.",
-   "title": "Everything Is Better",
-   "spotify_url": "https://open.spotify.com/track/03tyAB7mjX4xMJeilL7brl",
-   "apple_url": "https://music.apple.com/us/song/1880188777",
-   "why": "Same Oceanside scene; optimistic surf rock to test the sunnier edge of the lane."
+   "artist": "Levi Collins",
+   "title": "Ann Arbor",
+   "spotify_url": "https://open.spotify.com/track/37ADnlXn4Z3CRNQ25kpsgS",
+   "apple_url": "https://music.apple.com/us/song/6794747408",
+   "why": "Minor-leaning, held-back; the unknown the recommendation graph keeps surfacing."
   },
   {
    "order": 5,
-   "artist": "Beach Chapel",
-   "title": "Woke Up",
-   "spotify_url": "https://open.spotify.com/track/0AZCy3fFvxFh3RENipwxvK",
-   "apple_url": "https://music.apple.com/us/song/6773904771",
-   "why": "80s-synth pop-rock from the same scene; arrangement cue."
+   "artist": "Christian Leave",
+   "title": "Please Notice",
+   "spotify_url": "https://open.spotify.com/track/56HKYaeYxT6eoKmB2JuM2N",
+   "apple_url": "https://music.apple.com/us/song/1874409059",
+   "why": "Spare acoustic pop, darkest tone colour in the top ten."
   },
   {
    "order": 6,
-   "artist": "Strings & Heart",
-   "title": "peach sand",
-   "spotify_url": "https://open.spotify.com/track/0Kf0Y91hndxNaPfKDl9Rgq",
-   "apple_url": "https://music.apple.com/us/song/6819361261",
-   "why": "Surf-to-indie-pop; sits at #1 next to the seed at #2 on Road Trip With Jesus."
+   "artist": "Bebe Stockwell",
+   "title": "Nothing Good is Easy",
+   "spotify_url": "https://open.spotify.com/track/0Q5spcR38mMOuWUIEofauq",
+   "apple_url": "https://music.apple.com/us/song/6819365577",
+   "why": "Pop-finished folk; brightness and dynamics match the seed."
   },
   {
    "order": 7,
-   "artist": "Josiah Queen",
-   "title": "demons",
-   "spotify_url": "https://open.spotify.com/track/5HXFe0eb5lCfJpsqoqIbRS",
-   "apple_url": "https://music.apple.com/us/song/1861978106",
-   "why": "The lane's scale anchor at its darkest; marks the production ceiling."
+   "artist": "HAPPY LANDING",
+   "title": "Wanderer",
+   "spotify_url": "https://open.spotify.com/track/2eIE6EF7AEENMsemTNgAOt",
+   "apple_url": "https://music.apple.com/us/song/6771938517",
+   "why": "Band harmonies on a quiet cut; the chorus-era low end of the seed."
   },
   {
    "order": 8,
-   "artist": "Luke Rob",
-   "title": "Distance to Close",
-   "spotify_url": "https://open.spotify.com/track/64KQdbkSWBRTLtj2O3Geoj",
-   "apple_url": "https://music.apple.com/us/song/6772673130",
-   "why": "Pivot to acoustic faith-folk: longing resolved through prayer, 109 BPM."
-  },
-  {
-   "order": 9,
    "artist": "Sam Barber",
    "title": "The More I Hope",
    "spotify_url": "https://open.spotify.com/track/5jcS2jxv5IhNr6DenoBTi0",
    "apple_url": "https://music.apple.com/us/song/1882826389",
-   "why": "Country-folk hope; co-placed on MOODY INDIE. Vocal contrast is deliberate."
+   "why": "Country-folk with the seed's dynamics; vocal contrast is the point."
+  },
+  {
+   "order": 9,
+   "artist": "Ike Dweck",
+   "title": "Safe With Me",
+   "spotify_url": "https://open.spotify.com/track/0mLB2wh3dZfk0G627hk9A4",
+   "apple_url": "https://music.apple.com/us/song/1752992971",
+   "why": "Intimate night-time folk-pop that sits next to the seed on MOODY INDIE."
   },
   {
    "order": 10,
-   "artist": "HAPPY LANDING",
-   "title": "Radiate",
-   "spotify_url": "https://open.spotify.com/track/2PzLpBeOy2rySDKwCLvXAa",
-   "apple_url": "https://music.apple.com/us/song/6771938504",
-   "why": "Secular folk-rock with harmony stacks and light imagery."
+   "artist": "Hans Williams",
+   "title": "Skin",
+   "spotify_url": "https://open.spotify.com/track/4uqfL7UKwWPF1bpZok6zGs",
+   "apple_url": "https://music.apple.com/us/song/1722731736",
+   "why": "103 BPM exactly; raspier voice, same restraint."
   },
   {
    "order": 11,
-   "artist": "Chance Peña",
-   "title": "i am not who i was",
-   "spotify_url": "",
-   "apple_url": "https://music.apple.com/us/song/1705982596",
-   "why": "Secular version of the seed's 'friends moving on' verse; brisker tempo."
+   "artist": "Riverly",
+   "title": "Fail and Fall",
+   "spotify_url": "https://open.spotify.com/track/5Qwoyl1zyb4Dfm6eZLTRIx",
+   "apple_url": "https://music.apple.com/us/song/1819536572",
+   "why": "Acoustic-into-pop build from the artist MOODY INDIE is built around."
   },
   {
    "order": 12,
-   "artist": "Ike Dweck",
-   "title": "Dawn",
-   "spotify_url": "https://open.spotify.com/track/3vWCKiZLjjFd2ECYl8HVnc",
-   "apple_url": "https://music.apple.com/us/song/1874303814",
-   "why": "The seed's nearest neighbour on MOODY INDIE."
+   "artist": "Hazlett",
+   "title": "My Skin",
+   "spotify_url": "https://open.spotify.com/track/0IzCG0Vozya6HAcDkKlBnQ",
+   "apple_url": "https://music.apple.com/us/song/1626025824",
+   "why": "Confessional folk-pop with the seed's brightness and rhythm."
   },
   {
    "order": 13,
-   "artist": "Riverly",
-   "title": "Safe and Sound",
-   "spotify_url": "https://open.spotify.com/track/1RwUPQJmgdmmHvMicl2hAJ",
-   "apple_url": "https://music.apple.com/us/song/1850983130",
-   "why": "Acoustic-into-anthemic build, by the artist that playlist is built around."
+   "artist": "Luke Rob",
+   "title": "Distance to Close",
+   "spotify_url": "https://open.spotify.com/track/64KQdbkSWBRTLtj2O3Geoj",
+   "apple_url": "https://music.apple.com/us/song/6772673130",
+   "why": "Prayer-laced longing; bass and dynamics match."
   },
   {
    "order": 14,
-   "artist": "Bennett Coast",
-   "title": "Pretender",
-   "spotify_url": "https://open.spotify.com/track/2qIc2lDtHJte4EpEx7nKXn",
-   "apple_url": "https://music.apple.com/us/song/1732356508",
-   "why": "Chill alt-pop; Chartmetric musicality-similar, co-placed on SAD VIBES."
+   "artist": "Strings & Heart",
+   "title": "peach sand",
+   "spotify_url": "https://open.spotify.com/track/0Kf0Y91hndxNaPfKDl9Rgq",
+   "apple_url": "https://music.apple.com/us/song/6819361261",
+   "why": "Faith-coded surf-pop, bass held back; the brightest step before the end."
   },
   {
    "order": 15,
-   "artist": "Arden Jones",
-   "title": "deadlove",
-   "spotify_url": "https://open.spotify.com/track/1MXrvYih9N3QEuEPMcsyhX",
-   "apple_url": "https://music.apple.com/us/song/6793820664",
-   "why": "Ends in the secular night-time pop where DWLLRS's earlier audience lives."
+   "artist": "Joseph O'Brien",
+   "title": "Looking Down",
+   "spotify_url": "https://open.spotify.com/track/7klzGbf2WFUbgbPqBrLk0G",
+   "apple_url": "https://music.apple.com/us/song/1892521658",
+   "why": "Clean faith pop to close; placed near the seed by a curator."
   }
  ],
  "playlists": [
@@ -1627,146 +4801,12 @@
    "spotify_url": ""
   }
  ],
- "candidate_pool_not_accepted": [
-  {
-   "name": "Noah Kahan",
-   "source": "Shazam similar ('Orange Juice'); Apple similar artist; MOODY INDIE co-placement ('Orbiter' #11)",
-   "status": "borderline — reference anchor",
-   "reason": "Three signals but a mainstream act the client already knows; 'Orange Juice' (119 BPM) is about a friend's sobriety, not the seed's register. Kept out of the count so the list stays a discovery resource."
-  },
-  {
-   "name": "Forrest Frank",
-   "source": "Adjacent to the seed in two playlists ('LIFE IS GOOD' #69; 'YOUR WAY'S BETTER' #6); #1 on three sampled lists",
-   "status": "borderline — audience anchor",
-   "reason": "Strongest audience overlap in the faith lane, but sunny R&B-pop/CHH production and a solo rap-sung delivery diverge from the seed's melancholy alt-pop. Audience cannot override musical fit; link kept for context: spotify:track:3TQk8yZld28u3CvGiT8gHq."
-  },
-  {
-   "name": "Buffalo Traffic Jam",
-   "source": "Shazam similar ('Buyin' Dirt'); cited in Noah Kahan's and Jonthekid.'s lists",
-   "status": "borderline",
-   "reason": "Secular country-folk ('Sad tunes for degens'), 5.4M monthly listeners; vocal fit unassessed; no co-placement. Worth an ear test."
-  },
-  {
-   "name": "Daniel Leggs",
-   "source": "Shazam similar ('Cassette', 120 BPM Pop)",
-   "status": "borderline",
-   "reason": "Upbeat NYC alt-pop in the Arden Jones / Brotherr / Neon Dreams cluster; tempo and mood brighter than the seed."
-  },
-  {
-   "name": "mor",
-   "source": "Shazam similar ('Fill My Lungs'); cited in Jonthekid.'s list",
-   "status": "borderline",
-   "reason": "Capitol Nashville signing ('Father's Ending'); grief-driven acoustic songs — mood fits, but country tagging and no co-placement."
-  },
-  {
-   "name": "Bebe Stockwell",
-   "source": "Shazam similar ('Nothing Good is Easy', 2026-10-09, Columbia)",
-   "status": "borderline",
-   "reason": "Too new for placement evidence; indie-pop singer-songwriter; no sonic description found."
-  },
-  {
-   "name": "Jonthekid.",
-   "source": "Shazam similar ('On My Knees (organ version)', 136 BPM, Hip-Hop/Rap tag)",
-   "status": "borderline",
-   "reason": "Faith lyric and reciprocal similarity, but tempo and genre tag sit far from the seed; 11K monthly listeners."
-  },
-  {
-   "name": "Christian Leave",
-   "source": "Shazam similar ('Please Notice', 2016)",
-   "status": "rejected",
-   "reason": "A decade-old acoustic-pop viral single from an artist who has since moved to indie rock; era mismatch."
-  },
-  {
-   "name": "Cameron Whitcomb",
-   "source": "Shazam similar ('Problem')",
-   "status": "rejected",
-   "reason": "'Rough-edged country, punk-leaning pop' (Spotify bio) — energy and voice far from the seed."
-  },
-  {
-   "name": "Neon Dreams",
-   "source": "Shazam similar ('Take What's Yours', 75 BPM)",
-   "status": "rejected",
-   "reason": "Its own similar list is South African pop; no overlap with the seed's graph beyond one edge."
-  },
-  {
-   "name": "Ashley Singh",
-   "source": "Shazam similar ('Still Mine (Acoustic)', 69 BPM)",
-   "status": "rejected",
-   "reason": "Slow piano ballad; Ike Dweck appears in its list, which is the only link to this report."
-  },
-  {
-   "name": "Brotherr",
-   "source": "Shazam similar ('She'll Be Right on Time')",
-   "status": "rejected",
-   "reason": "Three-track catalogue, 38K listeners, no bio; cannot be assessed."
-  },
-  {
-   "name": "Krooked Kings",
-   "source": "Chartmetric similar artist (84%); Apple similar artist",
-   "status": "unassessed",
-   "reason": "Artist-level similarity only; no track-level or playlist evidence."
-  },
-  {
-   "name": "slenderbodies · Bay Ledges · Mr Twin Sister · Dreamgirl · Sjowgren · Claud · Forrest Nolan",
-   "source": "Chartmetric similar artists (79–85%)",
-   "status": "unassessed",
-   "reason": "Chill indie/alt-pop set; no track-level evidence. A secular-lane watchlist, not recommendations."
-  },
-  {
-   "name": "Aidan Bissett",
-   "source": "Apple similar artist; SAD VIBES co-placement ('my funeral' #66)",
-   "status": "borderline",
-   "reason": "Alt-pop with two signals; 'my funeral' theme not verified."
-  },
-  {
-   "name": "Hans Williams · Stephen Dawes · Ethan Regan · HARBOUR · Bazzi · Dominic Fike",
-   "source": "Apple Music similar artists",
-   "status": "unassessed",
-   "reason": "Artist-level only."
-  },
-  {
-   "name": "Grace Runkle",
-   "source": "Co-placed ×4; 'breaks my heart' in Gable Price and Friends' Shazam list",
-   "status": "borderline",
-   "reason": "Worship-pop singer-songwriter ('I write songs with my Dad (the heavenly one)'); closer to congregational than alt-pop."
-  },
-  {
-   "name": "Elijah Thomas · Brothrly · Remnant House · GRAHAM · Ryan Ellis · Claire Leslie · Van Buren · Trey Simon · Mountain People Worship · LOST & FOUND · Tenroc · Common Noble",
-   "source": "Co-placed in 2–4 sampled playlists",
-   "status": "rejected from shortlist",
-   "reason": "Co-placement without any musical description or algorithmic link to the seed; most are worship or CHH. Listed so the co-occurrence table is complete."
-  },
-  {
-   "name": "Levi Troast · Chris Renzema · Jervis Campbell · Reagan James Broome · Tate Butts · Ivan Castro · Zach Webb",
-   "source": "Neighbours in the lyric-named fan playlists or 'christian music 🙌🤍'",
-   "status": "unassessed",
-   "reason": "Fan-playlist adjacency only."
-  },
-  {
-   "name": "Jonah Kegan · Benson Boone · Alexander Stewart · Zach Hood · Thomas Day",
-   "source": "Playlist name ':) smile!' list titled with these artists (repeated pair in export); Thomas Day also in Arden Jones's Shazam list",
-   "status": "unassessed",
-   "reason": "Name clue toward secular male pop; not investigated further."
-  },
-  {
-   "name": "SYML · Hazlett · Benjamin Steer · Brenn! · Hugo Barriol · Mark Ambor · Myles Smith · gavn!",
-   "source": "MOODY INDIE / granola girl co-placement",
-   "status": "unassessed",
-   "reason": "Secular indie-folk/pop neighbours on one list each; Brenn! 'Days On End' also appears in Noah Kahan's and Daniel Leggs's Shazam lists."
-  },
-  {
-   "name": "AZIEDOESNTEXIST · comehelpglo · Pink Boy · Ralph Castelli",
-   "source": "SAD VIBES / ALTERNATIVE neighbours",
-   "status": "rejected",
-   "reason": "Bedroom-pop / sad-alt with no documented fit; the seed is an outlier on that list."
-  },
-  {
-   "name": "Other DWLLRS recordings",
-   "source": "Album 'tell you when you're older' (2026-07-10): dwellers, looking back at us now, driving (pt. 2), meet me on the roof, fed up, problems, another sad song, pretty for someone, remedy, mud, tell you when you're older, new spirits; plus 'Blue Spirits' (2022), 'Driving' (2023), 'Dividends' (2022), 'Nights That We Needed' (2024)",
-   "status": "reference only",
-   "reason": "'new spirits' (2026-06-05) is in Shazam's similar list for the seed and sits at #2 behind it in lena 🌻's fan playlist. Excluded from the similar-artist count by design."
-  }
- ],
+ "csv_audit": {
+  "rows": 743,
+  "distinct_pairs": 731,
+  "repeated_pairs": 12,
+  "blank_country": 743
+ },
  "sources": [
   {
    "source": "Supplied files",
@@ -1812,38 +4852,171 @@
    "source": "Press",
    "detail": "Sweety High (2026-07-20); K-LOVE (2026-07-27); 94.7 The Word/GodTube (Living Again, Jul 2026); Atwood Magazine (2026-03-27); Artistrack (Gable Price and Friends); Liberty University (Beach Chapel); Whiskey Riff/Americana UK (Buffalo Traffic Jam); uDiscover (mor); Qobuz/AllMusic bio (DWLLRS)",
    "used_for": "Attributed sound descriptions and identities"
+  },
+  {
+   "source": "iTunes preview clips",
+   "detail": "80 thirty-second previews from Apple's CDN, downloaded with permission on 2026-10-20 into the session scratchpad; not published",
+   "used_for": "Acoustic comparison against the seed WAV"
   }
  ],
  "next_steps": [
   {
-   "step": "Run the ear test on the fifteen",
-   "detail": "Listen to the sequence in order with the four-dimension rubric open and overwrite the 'Not heard' cells. Two decisions need ears, not data: the seed's key reading (A major family per chart vs C♯ minor per algorithm) and whether the Oceanside guitar bands actually sit near a minimalist pop duo or only near its audience."
+   "step": "Listen to the sequence once, in order",
+   "detail": "Seventeen candidate recordings measured within 1.20 of the seed; the ear decides which of those are the same record and which are coincidence. Mark each one 'same room' or 'different room' and the shortlist writes itself."
   },
   {
-   "step": "Watch the Near Kingdom / Oceanside cluster as a scene",
-   "detail": "Three Near Kingdom-curated lists and one label roster account for most of the verified adjacency. Re-pull Christian Pop Hits 2026, Christian Indie Hits and Upbeat Christian songs monthly, log who lands next to the seed, and track new Hopeful., Living Again and Beach Chapel releases as they arrive."
+   "step": "Pull full tracks for the top five and re-measure",
+   "detail": "The scores use Apple's 30-second previews, which usually land on a chorus. Full-length comparisons of Jonthekid., Dreamgirl, Levi Collins, Christian Leave and Bebe Stockwell against the whole seed would confirm whether the verse-to-chorus lift matches too."
   },
   {
-   "step": "Build the secular watchlist from the curators, not the charts",
-   "detail": "MOODY INDIE (Landlake music) and SAD VIBES / ALTERNATIVE (@saiyanreece) programmed the seed into secular rooms. Follow those curators' new adds and Chartmetric's similar-artist set (Bennett Coast, Krooked Kings, slenderbodies, Bay Ledges) and re-run co-occurrence after the album cycle, keeping the summer and album versions separate."
+   "step": "Watch the two curators who heard it right",
+   "detail": "Landlake music (MOODY INDIE) and @saiyanreece (SAD VIBES / ALTERNATIVE) programmed the seed by sound, not by faith tag, and their lists hold most of the measured matches. Follow their adds; the Near Kingdom lists remain the audience map, not the sound map."
   }
  ],
  "limits": [
-  "No listening. Sonic and vocal judgments are capped at Medium/Unassessed for every candidate, and the seed fingerprint is signal statistics aligned to a community chord chart.",
-  "Playlist contents come from Spotify's public embed, which exposes only the first 100 tracks. Any placement beyond #100 (e.g., *JESUS* at #534, granola girl at #266) is resolved but not verified for co-occurrence.",
-  "The export has no playlist IDs; identities were resolved by name + curator through Chartmetric (top 12) or Spotify search (small lists). Six names remain unresolved.",
-  "Shazam blocked requests after about 25 pages, so BPM/label data covers 10 of 27 accepted recordings.",
-  "Chartmetric similar-artist and comparable-track tables were read for page 1 only (Chrome extension disconnected before pagination).",
-  "The '28-Day Change' column is a playlist-level Chartmetric field whose exact definition was not verified in-app; it is not song stream growth.",
-  "Playlist follower counts are export snapshots and were never summed as an audience figure.",
-  "Metrics are dated per platform and never combined across versions; the second Spotify single listing (35dPLCeXcr0ZuRAhOdS0a1) was not merged with the seed."
+  "Measurements use 30-second Apple previews for candidates and three windows plus the full track for the seed; previews usually cover a chorus, so verse textures are under-represented.",
+  "The metric scores timbre, brightness, rhythm density, bass weight, dynamics, texture, mode and tempo. It does not hear lyrics, vocal character, melody or mood; those come from attributed descriptions.",
+  "Six candidates had no Apple preview (Krooked Kings 'Headhunters', Forrest Nolan, AZIEDOESNTEXIST, Pink Boy, comehelpglo, Jonah Kegan) and are unmeasured. SYML was measured on a live version; Hopeful. and Arden Jones were re-pulled by ID after the search matched the wrong version.",
+  "Playlist contents come from Spotify's public embed (first 100 tracks); placements deeper than that are resolved but not verified.",
+  "Shazam blocked requests after about 25 pages, so BPM/label data from Shazam covers only part of the pool; tempos in the measured table are librosa estimates from previews and can land on 3:2 or 2:1 relatives.",
+  "Metrics are dated per platform and never combined across the original, summer and album versions."
+ ],
+ "rev1_evidence_based_ranking": [
+  {
+   "rank": 1,
+   "name": "Gable Price and Friends",
+   "lane": "faith-indie",
+   "recordings": [
+    "One Bedroom Apartment",
+    "Too Good"
+   ]
+  },
+  {
+   "rank": 2,
+   "name": "Hopeful.",
+   "lane": "faith-indie",
+   "recordings": [
+    "Everything Is Better",
+    "Like I Am Yours"
+   ]
+  },
+  {
+   "rank": 3,
+   "name": "Living Again",
+   "lane": "faith-indie",
+   "recordings": [
+    "Dive Into",
+    "Cynical and Jaded"
+   ]
+  },
+  {
+   "rank": 4,
+   "name": "HAPPY LANDING",
+   "lane": "indie-folk",
+   "recordings": [
+    "Radiate",
+    "Wanderer"
+   ]
+  },
+  {
+   "rank": 5,
+   "name": "Luke Rob",
+   "lane": "faith-indie",
+   "recordings": [
+    "Distance to Close",
+    "Chapel Haze"
+   ]
+  },
+  {
+   "rank": 6,
+   "name": "Beach Chapel",
+   "lane": "faith-indie",
+   "recordings": [
+    "Woke Up",
+    "Cardiff"
+   ]
+  },
+  {
+   "rank": 7,
+   "name": "Sam Barber",
+   "lane": "indie-folk",
+   "recordings": [
+    "The More I Hope"
+   ]
+  },
+  {
+   "rank": 8,
+   "name": "Josiah Queen",
+   "lane": "faith-indie",
+   "recordings": [
+    "demons",
+    "Garden in Manhattan"
+   ]
+  },
+  {
+   "rank": 9,
+   "name": "Strings & Heart",
+   "lane": "faith-indie",
+   "recordings": [
+    "peach sand",
+    "flowers dressed in blue"
+   ]
+  },
+  {
+   "rank": 10,
+   "name": "Joseph O'Brien",
+   "lane": "faith-indie",
+   "recordings": [
+    "Looking Down"
+   ]
+  },
+  {
+   "rank": 11,
+   "name": "Bennett Coast",
+   "lane": "alt-pop",
+   "recordings": [
+    "Pretender"
+   ]
+  },
+  {
+   "rank": 12,
+   "name": "Riverly",
+   "lane": "indie-folk",
+   "recordings": [
+    "Safe and Sound",
+    "Fail and Fall"
+   ]
+  },
+  {
+   "rank": 13,
+   "name": "Chance Peña",
+   "lane": "indie-folk",
+   "recordings": [
+    "i am not who i was",
+    "How Long, How Low? (with Hayd)"
+   ]
+  },
+  {
+   "rank": 14,
+   "name": "Ike Dweck",
+   "lane": "indie-folk",
+   "recordings": [
+    "Dawn",
+    "Safe With Me"
+   ]
+  },
+  {
+   "rank": 15,
+   "name": "Arden Jones",
+   "lane": "alt-pop",
+   "recordings": [
+    "deadlove"
+   ]
+  }
  ],
  "data_provenance": {
-  "audio_analysis": "librosa 1.0.0 (uv venv, Python 3.12) + ffmpeg ebur128, run 2026-10-20 on the supplied WAV; script outputs retained in session scratchpad (sig.json).",
-  "playlist_contents": "Spotify public embed JSON (open.spotify.com/embed/playlist/<id>), first 100 tracks; pulled 2026-10-20.",
-  "playlist_identity": "Chartmetric track → playlists tab (logged-in session) for the top 12 by followers; Spotify search by name for smaller lists; owner confirmed from embed subtitle.",
-  "recording_identity": "Spotify embed JSON per track (artist URI, release date) and iTunes Search API (Apple ID, genre, release).",
-  "similar_songs": "Shazam song pages (Apple Music recommendations) read 2026-10-20 before the site blocked further requests.",
-  "no_downloads": "No candidate audio was downloaded or analysed; no external playlist or account was created; nobody was contacted."
+  "audio_analysis": "librosa 1.0.0 (uv venv, Python 3.12); features in feats.json, ranking in ranking.json (session scratchpad)",
+  "previews": "iTunes Search API previewUrl → ffmpeg → 22,050 Hz mono WAV",
+  "no_publishing_of_audio": "No preview or seed audio is included in the published folder."
  }
 }
